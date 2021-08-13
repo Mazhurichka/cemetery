@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>AA Group</title>  </head>
+
+  <body>
+    <!--Sprite-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="viber" viewBox="0 0 24 24">
+        <g>
+          <path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/><path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/><path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/><path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/><path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/>
+        </g>
+      </symbol> 
+    
+      <symbol id="facebook" viewBox="0 0 48.605 48.605">
+        <g>
+         <path d="M34.094,8.688h4.756V0.005h-8.643c-0.721-0.03-9.51-0.198-11.788,8.489c-0.033,0.091-0.761,2.157-0.761,6.983l-7.903,0.024
+    		v9.107l7.913-0.023v24.021h12.087v-24h8v-9.131h-8v-2.873C29.755,10.816,30.508,8.688,34.094,8.688z M35.755,17.474v5.131h-8v24
+    		h-8.087V22.579l-7.913,0.023v-5.107l7.934-0.023l-0.021-1.017c-0.104-5.112,0.625-7.262,0.658-7.365
+    		c1.966-7.482,9.473-7.106,9.795-7.086l6.729,0.002v4.683h-2.756c-4.673,0-6.338,3.054-6.338,5.912v4.873L35.755,17.474
+    		L35.755,17.474z"/>
+        </g>
+      </symbol>
+    
+      <symbol id="instagram"  viewBox="0 0 368 368">
+        <g>
+          <path d="M312,0H56C25.12,0,0,25.12,0,56v256c0,30.88,25.128,56,56,56v-0.728C62.536,368,74.416,368,96,368h216
+    			c30.88,0,56-25.128,56-56V56C368,25.12,342.872,0,312,0z M352,312c0,22.056-17.944,40-40,40c0,0-254.232,0-256,0
+    			c-22.056,0-40-17.944-40-40V56c0-22.056,17.944-40,40-40h256c22.056,0,40,17.944,40,40V312z"/>
+    	</g>
+    <g>
+    	<g>
+    		<path d="M184,64c-66.168,0-120,53.832-120,120s53.832,120,120,120s120-53.832,120-120S250.168,64,184,64z M184,288
+    			c-57.344,0-104-46.656-104-104S126.656,80,184,80s104,46.656,104,104S241.344,288,184,288z"/>
+    	</g>
+    </g>
+    <g>
+    	<g>
+    		<path d="M183.624,111.624c-39.904,0-72.376,32.472-72.376,72.376s32.472,72.376,72.376,72.376
+    			C223.528,256.376,256,223.904,256,184S223.528,111.624,183.624,111.624z M183.624,240.376c-31.088,0-56.376-25.288-56.376-56.376
+    			s25.288-56.376,56.376-56.376S240,152.912,240,184S214.712,240.376,183.624,240.376z"/>
+    	</g>
+    </g>
+    <g>
+    	<g>
+    		<circle cx="304" cy="64" r="16"/>
+    	</g>
+    </g>
+    
+      </symbol>
+      <symbol id="test" viewBox="0 -120 512.00201 512">
+        <g>
+          <path
+            d="m409.898438 153.902344 101.796874-153.902344h-156.117187l-2.914063 11.292969c-7.480468 28.992187-21.519531 68.285156-45.914062 90.839843-3.015625 2.785157-5.871094 5.023438-8.5 6.816407v-108.949219h-135.972656v30.101562h12.703125v68.222657c-15.242188-13.40625-34.394531-38.988281-39.410157-84.90625l-1.464843-13.417969h-134.105469l4.605469 18.65625c16.558593 67.09375 41.398437 122.058594 73.835937 163.367188 26.480469 33.726562 58.019532 58.488281 93.738282 73.59375 31.898437 13.492187 61.269531 16.800781 82.402343 16.800781 19.4375 0 31.902344-2.800781 32.949219-3.042969l11.464844-2.671875.59375-41.351563 51.058594 44.417969h161.355468zm-139.484376 6.175781-1.164062 81.546875c-16.808594 1.496094-50.109375 1.554688-86.859375-14.378906-30.691406-13.308594-57.953125-35.101563-81.027344-64.777344-26.425781-33.984375-47.449219-78.449219-62.613281-132.367188h68.777344c14.886718 86.335938 74.78125 108.675782 77.449218 109.625l20.105469 7.171876v-116.796876h63.070313v116.945313l15.835937-.828125c1.925781-.101562 19.414063-1.496094 40.066407-19.195312 23.464843-20.113282 41.828124-52.683594 54.664062-96.921876h76.976562l-83.617187 126.410157 73.277344 83.152343h-83.449219zm0 0"
+          />
+        </g>
+      </symbol>
+    
+      <symbol id="monument" viewBox="0 0 512 512">
+    	<g>
+    		<path d="M200.4,359.45c-3.6-15.2-9-44.9-49.7-74.3c-3.9-2.8-9.5-8.3-12.4-12.1l-45.2-58.2c-4.7-7.9-15.8-10.6-24.4-5.3
+    			c-8.5,5.2-11.2,16.4-6.5,24.3l43.5,71c1.4,2.3,0.6,5.4-1.8,6.7c-2.2,1.2-4.9,0.5-6.3-1.5l-1.8-2.7c0,0-32.9-45-49.3-80.5
+    			c-3-6.5-4.6-13-5.1-20.1c-0.1-1.1-0.1-2.6-0.2-3.7c-0.5-16.2-3.1-39.2-5.8-55.3c-0.8-4.5-3-21.3-7.8-26.7
+    			c-6.7-7.6-15.6-5.9-21.3-1.3c-4.7,3.8-6.8,10-6.2,16.1l12.6,122.7l0.7,4.5c2.3,15.4,9.6,28.2,20.3,39.6l72.7,87.5l1.4,40.4
+    			c0,3.6,2.9,6.5,6.5,6.5l76.5,0.4c3.6,0,6.5-2.9,6.5-6.5l2.7-48.9c0.7-5.1,0.8-10.2,0.8-14.3
+    			C200.8,362.85,200.4,359.45,200.4,359.45z"/>
+    	</g>
+    	<g>
+    		<path d="M375.7,91.15c-3.3-8.1-8.1-15.4-14.3-21.6c-6.2-6.2-13.5-11-21.6-14.3c-7.8-3.2-16.1-4.8-24.5-4.8
+    			c-8.5,0-16.7,1.6-24.5,4.8c-8.1,3.3-15.4,8.1-21.6,14.3l-5.3,5.3l20.8,20.8l5.3-5.3c6.8-6.8,15.8-10.5,25.4-10.5
+    			c9.6,0,18.6,3.7,25.4,10.5s10.5,15.8,10.5,25.4c0,9.6-3.7,18.6-10.5,25.4c-6.8,6.8-15.8,10.5-25.4,10.5c-9.6,0-18.6-3.7-25.4-10.5
+    			l-10.3-10.3l-61.2-61.2c-6.2-6.2-13.5-11-21.6-14.3c-7.8-3.2-16.1-4.8-24.5-4.8c-8.4,0-16.7,1.6-24.5,4.8
+    			c-8.1,3.3-15.4,8.1-21.6,14.3c-6.2,6.2-11,13.5-14.3,21.6c-3.2,7.8-4.8,16.1-4.8,24.5c0,8.5,1.6,16.7,4.8,24.5
+    			c3.3,8.1,8.1,15.4,14.3,21.6s13.5,11,21.6,14.3c7.8,3.2,16.1,4.8,24.5,4.8c8.4,0,16.7-1.6,24.5-4.8c8.1-3.3,15.4-8.1,21.6-14.3
+    			l4.5-4.5l-20.8-20.8l-4.5,4.5c-6.8,6.8-15.8,10.5-25.4,10.5s-18.6-3.7-25.4-10.5c-6.8-6.8-10.5-15.8-10.5-25.4
+    			c0-9.6,3.7-18.6,10.5-25.4c6.8-6.8,15.8-10.5,25.4-10.5c9.6,0,18.6,3.7,25.4,10.5l25.4,25.4l46.1,46.1c6.2,6.2,13.5,11,21.6,14.3
+    			c7.8,3.2,16.1,4.8,24.5,4.8c8.5,0,16.7-1.6,24.5-4.8c8.1-3.3,15.4-8.1,21.6-14.3s11-13.5,14.3-21.6c3.2-7.8,4.8-16.1,4.8-24.5
+    			C380.5,107.15,378.9,98.95,375.7,91.15z"/>
+    	</g>
+    	<g>
+    		<path d="M57.6,142.35c-1.8-6.2-5.4-10.7-11.7-12.8c1.3,4.3,2.2,8.7,2.9,12.9c2.3,13.9,5.8,38.9,6,52.2c0,1.4,0.1,2.7,0.1,4.1
+    			c1.5-1.3,3.1-2.6,4.9-3.7c2.2-1.4,4.5-2.4,6.9-3.2c0.1-0.2,0.2-0.3,0.3-0.4C65.3,178.75,60.8,154.75,57.6,142.35z"/>
+    	</g>
+    	<g>
+    		<path d="M481.6,119.55c-5.8-4.5-14.7-6.1-21.4,1.4c-4.7,5.4-7,22.2-7.8,26.7c-2.7,16.1-5.4,39.1-5.8,55.3c0,1.1-0.1,2.6-0.2,3.7
+    			c-0.4,7.1-2.1,13.7-5.1,20.1c-16.3,35.6-49.2,80.5-49.2,80.5l-1.8,2.7c-1.4,2-4.1,2.7-6.3,1.5c-2.4-1.3-3.2-4.4-1.8-6.7l43.5-71
+    			c4.7-7.9,2-19-6.5-24.3c-8.5-5.2-19.7-2.5-24.4,5.3l-45.2,58.2c-3,3.8-8.5,9.3-12.4,12.1c-40.7,29.3-46.1,59-49.7,74.3
+    			c0,0-0.3,3.4-0.4,8.3c0,4.1,0.1,9.2,0.8,14.3l2.7,48.9c0,3.6,2.9,6.5,6.5,6.5l76.5-0.4c3.6,0,6.5-2.9,6.5-6.5l1.4-40.4l72.7-87.5
+    			c10.7-11.4,18-24.2,20.3-39.6l0.7-4.5l12.6-122.8C488.4,129.65,486.3,123.35,481.6,119.55z"/>
+    	</g>
+    	<g>
+    		<path d="M406.2,159.95c-2,7.7-7.5,24-8.7,32.2c3.5-1.3,7.1-2,10.9-2.2c0-0.6,0-1.2,0.1-1.8l0.7-6c1.2-8.9,6.3-25.8,8.4-35
+    			C411.4,149.25,407.8,153.75,406.2,159.95z"/>
+    	</g>
+    	<g>
+    		<path d="M430.4,142.35c-3.3,12.4-7.8,36.4-9.4,49.1c0.1,0.2,0.2,0.3,0.3,0.4c2.4,0.8,4.7,1.9,6.9,3.2c1.6,1.1,3.2,2.4,4.8,3.7
+    			c0-1.4,0.1-2.7,0.1-4.1c0.3-13.3,3.7-38.3,6-52.2c0.7-4.2,1.5-8.5,2.9-12.9C435.7,131.65,432.1,136.15,430.4,142.35z"/>
+    	</g>
+    	<g>
+    		<path d="M81.8,160.05c-1.8-6.3-5.4-10.8-11.5-12.9c2,9.2,7.2,26.1,8.4,35l0.8,6.1c0.1,0.6,0.1,1.2,0.1,1.8
+    			c3.7,0.1,7.4,0.9,10.9,2.2C89.3,184.05,83.8,167.65,81.8,160.05z"/>
+    	</g>
+      </symbol>
+    
+      <symbol id="cube" viewBox="0 0 512 512">
+    	  <g>
+    		<path d="m504 275.09c0-3.366-2.106-6.371-5.27-7.52l-114.73-41.72v-133.62h-.31c1.161-4.025-1.013-8.258-4.96-9.66l-120-43.63c-1.762-.65-3.698-.65-5.46 0l-120 43.63c-2.56.941-4.466 3.118-5.06 5.78h-.21v137.5l-114.73 41.72c-2.56.941-4.466 3.118-5.06 5.78h-.21v141.82h.2c-.881 3.923 1.29 7.889 5.07 9.26l120 43.63c1.761.653 3.699.653 5.46 0l117.27-42.64 117.27 42.64c1.761.653 3.699.653 5.46 0l120-43.63c2.43-.883 4.282-2.888 4.97-5.38h.3v-141.82s-.006-1.416 0-2.14zm-376 174.03-104-37.81v-124.8l104 37.82zm8-138.91-96.59-35.12 95.96-34.9 96.6 35.13zm112 101.1-104 37.81v-124.79l104-37.82zm0-147.64-104-37.82v-124.34l104 37.82zm-88.59-173.58 96.59-35.12 96.59 35.12-96.59 35.12zm208.59 11.42v124.34l-104 37.82v-124.34zm0 347.61-104-37.81v-124.8l104 37.82zm8-138.91-95.97-34.89 96.6-35.13 95.96 34.9zm112 101.1-104 37.81v-124.79l104-37.82z"/>
+    	</g>
+    	 
+      </symbol>
+    
+      <symbol id="track" viewBox="0 0 512 512">
+    	  <g>
+    		  <path d="M104,376a24,24,0,1,0,24,24A24.027,24.027,0,0,0,104,376Zm0,32a8,8,0,1,1,8-8A8.009,8.009,0,0,1,104,408Z"/><path d="M408,376a24,24,0,1,0,24,24A24.027,24.027,0,0,0,408,376Zm0,32a8,8,0,1,1,8-8A8.009,8.009,0,0,1,408,408Z"/><path d="M502.73,267.67l-72-112A8,8,0,0,0,424,152H328V108a28.031,28.031,0,0,0-28-28H36A28.031,28.031,0,0,0,8,108V400a8,8,0,0,0,8,8H48.58a55.994,55.994,0,0,0,110.84,0H352.58a55.994,55.994,0,0,0,110.84,0H496a8,8,0,0,0,8-8V272A8.018,8.018,0,0,0,502.73,267.67ZM104,440a40,40,0,1,1,40-40A40.04,40.04,0,0,1,104,440Zm208-48H159.42a55.994,55.994,0,0,0-110.84,0H24V312H312Zm0-96H24V108A12.01,12.01,0,0,1,36,96H300a12.01,12.01,0,0,1,12,12ZM435.06,192l46.29,72H368V192ZM408,440a40,40,0,1,1,40-40A40.04,40.04,0,0,1,408,440Zm80-112H472a8,8,0,0,1,0-16h16Zm0-32H472a24,24,0,0,0,0,48h16v48H463.42a55.994,55.994,0,0,0-110.84,0H328V168h91.63l5.15,8H360a8,8,0,0,0-8,8v88a8,8,0,0,0,8,8H488Z"/><path d="M384,296H360a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/><path d="M216,344h64a8,8,0,0,0,0-16H216a8,8,0,0,0,0,16Z"/><path d="M280,352H256a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/>
+    		</g>
+      </symbol>
+    
+      <symbol id="shovel" viewBox="0 0 128 128">
+    	  <g>
+    		  <path d="m91.514 13.05-5.683 5.683a6.188 6.188 0 0 0 0 8.744l14.692 14.692a6.188 6.188 0 0 0 8.744 0l5.683-5.684a1.75 1.75 0 0 0 0-2.474l-20.961-20.961a1.8 1.8 0 0 0 -2.475 0zm19.724 22.2-4.446 4.446a2.752 2.752 0 0 1 -3.794 0l-14.692-14.696a2.687 2.687 0 0 1 0-3.794l4.445-4.446z"/><path d="m127.487 34.011-33.498-33.498a1.749 1.749 0 0 0 -2.475 0l-11.952 11.952a15.048 15.048 0 0 0 0 21.28l2.289 2.289-38.351 38.352-14.239-14.239a1.75 1.75 0 0 0 -2.474 0l-13.454 13.453a45.339 45.339 0 0 0 -9.75 49.884 1.756 1.756 0 0 0 .932.932 45.353 45.353 0 0 0 49.884-9.75l13.454-13.453a1.749 1.749 0 0 0 0-2.475l-14.239-14.238 38.352-38.351 2.288 2.289a15.049 15.049 0 0 0 21.281 0l11.952-11.953a1.748 1.748 0 0 0 0-2.474zm-63.346 65.966-12.216 12.215a41.847 41.847 0 0 1 -45.389 9.273 41.845 41.845 0 0 1 9.272-45.39l12.216-12.216 13 13-6.066 6.066a6.937 6.937 0 0 0 0 9.809l.306.306a6.935 6.935 0 0 0 9.809 0l6.066-6.066zm-21.393-9.56a3.652 3.652 0 0 1 -5.165-5.165l7.154-7.152 39.589-39.591 5.165 5.165zm70.312-44.454a11.548 11.548 0 0 1 -16.331 0l-3.524-3.524-7.642-7.639-3.526-3.526a11.548 11.548 0 0 1 0-16.331l10.714-10.718 31.024 31.023z"/><path d="m14.641 94.852a1.746 1.746 0 0 0 -2.175 1.181 34.291 34.291 0 0 0 -.256 18.514 1.75 1.75 0 0 0 3.383-.9 30.788 30.788 0 0 1 .23-16.625 1.748 1.748 0 0 0 -1.182-2.17z"/>
+    		</g>
+      </symbol>
+    </svg>
+
+    <div class="page">
+      <!--Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo" aria-label="logo">
+              <svg class="header__logo-icon">
+                <use xlink:href="#monument"></use>
+              </svg>
+              <div class="header__logo-text">AA Group</div>
+            </div>
+      
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__list-item active">
+                  <a href="#" class="nav__list-link">Главная</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Услуги</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Портфолио</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <button class="burger active" type="button">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+      
+            <div class="header__language">
+              <a class="header__language-uk" href="#">UK</a>
+              <a class="header__language-ru" href="#">RU</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Content-->
+      <div class="content">
+<div class="intro">
+  <div class="intro__slider">
+    <div>
+      <div class="intro__slider-item">
+        <img
+          class="intro__slider-photo"
+          src="assets/img/intro_slider2.jpg"
+          alt="#"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="intro__slider-item">
+        <img
+          class="intro__slider-photo"
+          src="assets/img/intro_slider4.jpg"
+          alt="#"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="intro__slider-item">
+        <img
+          class="intro__slider-photo"
+          src="assets/img/intro_slider5.jpg"
+          alt="#"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="intro__inner">
+    <div class="container">
+      <div class="intro__inner-text">
+        <h1 class="intro__inner-title">Увековечим память в камне...</h1>
+        <h3 class="intro__inner-subtitle">Более 10 лет опыта</h3>
+      </div>
+    </div>
+  </div>
+  <!--intro__inner-->
+</div>
+<!--intro-->
+
+<section class="services">
+  <div class="container">
+    <h2 class="services__title section__title">Профессиональные услуги</h2>
+    <div class="services__content">
+      <div class="services__item">
+        <img
+          src="assets/img/services-1.jpg"
+          alt="#"
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Копание могил</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="assets/img/services-2.jpg"
+          alt="#"
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Гравировка</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="assets/img/services-3.jpg"
+          alt=""
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Проектирование памятников</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+
+      <div class="services__item">
+        <img
+          src="assets/img/services-2.jpg"
+          alt=""
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Проектирование памятников</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="assets/img/services-3.jpg"
+          alt=""
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Проектирование памятников</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="assets/img/services-1.jpg"
+          alt=""
+          class="services__item-img"
+        />
+        <div class="services__item-text">
+          <div class="services__item-subtitle">Проектирование памятников</div>
+        </div>
+        <button class="button button--dark" type="button">Заказать</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--services-->
+
+<section class="benefits">
+  <div class="container">
+    <h2 class="benefits__title section__title">Наши преимущества</h2>
+    <div class="benefits__content">
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#cube"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#track"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#shovel"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#cube"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#cube"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#track"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#shovel"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+
+      <div class="benefits__item">
+        <div class="benefits__item-icon">
+          <svg class="benefits__item-svg">
+            <use xlink:href="#shovel"></use>
+          </svg>
+        </div>
+        <div class="benefits__item-text">Качественные материалы</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--benefits-->
+
+<section class="works">
+  <div class="container">
+    <h2 class="works__title section__title">Работа с камнем</h2>
+    <div class="works__wrapper">
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Красный гранит</div>
+      </div>
+     
+
+      <div class="works__item">
+         <div class="works__photo">
+          <img src="assets/img/materials-3.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Черный мрамор</div>
+      </div>
+     
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials-4.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Карельский Диабас</div>
+      </div>
+      
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Букинский габбро</div>
+      </div>
+      
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials-3.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Гранит</div>
+      </div>
+    
+      <div class="works__item">
+         <div class="works__photo">
+          <img src="assets/img/materials-4.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Гранит</div>
+      </div>
+      
+      <div class="works__item">
+         <div class="works__photo">
+          <img src="assets/img/materials.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Гранит</div>
+      </div>
+
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials-3.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Гранит</div>
+      </div>
+      <div class="works__item">
+        <div class="works__photo">
+          <img src="assets/img/materials.jpg" alt="#"/>
+        </div>
+         <div class="works__description">Гранит</div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<section class="engravis">
+  <div class="container">
+    <h2 class="engravis__title section__title">Гравировка портретов</h2>
+    <div class="engravis__wrapper">
+      <div class="engravis__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla
+          provident ab nesciunt perspiciatis. Est iusto vitae repudiandae ipsam
+          dicta cumque nihil neque nulla quia, aspernatur at voluptatem itaque.
+          Excepturi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla
+          provident ab nesciunt perspiciatis. Est iusto vitae repudiandae ipsam
+          dicta cumque nihil neque nulla quia, aspernatur at voluptatem itaque.
+          Excepturi.
+        </p>
+      </div>
+      <div class="engravis__img">
+        <img src="assets/img/layout.jpg" alt="#" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="container">
+    <h2 class="portfolio__title section__title">Портфолио</h2>
+    <div class="portfolio__subtitle">Памятники</div>
+    <div class="portfolio__slider">
+      <div class="portfolio__wrapper">
+        <div class="portfolio__slider-item">
+          <img
+            src="assets/img/portfolio-1.jpg"
+            alt="#"
+            class="portfolio__photo"
+          />
+        </div>
+      </div>
+
+      <div class="portfolio__wrapper">
+        <div class="portfolio__slider-item">
+          <img
+            src="assets/img/portfolio-3.jpg"
+            alt="#"
+            class="portfolio__photo"
+          />
+        </div>
+      </div>
+
+      <div class="portfolio__wrapper">
+        <div class="portfolio__slider-item">
+          <img
+            src="assets/img/portfolio-1.jpg"
+            alt="#"
+            class="portfolio__photo"
+          />
+        </div>
+      </div>
+
+      <div class="portfolio__wrapper">
+        <div class="portfolio__slider-item">
+          <img
+            src="assets/img/portfolio-1.jpg"
+            alt="#"
+            class="portfolio__photo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+      <!--Footer-->
+      <footer class="footer">
+       <div class="container">
+          <div class="footer__wrapper">
+          <div class="address">
+            <div class="address__title">Как нас найти</div>
+            <address class="address__text">г. Винница Лука-Мелешковская 32</address>
+          </div>
+          <div class="contacts">
+            <div class="contacts__title">Контакты для связи</div>
+            <div class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:+380982643997">+38098 2643997</a>
+              <a class="contacts__phone-link" href="tel:+380632643997">+38098 2643997</a>
+              <a class="contacts__phone-link" href="tel:+380982643997">+38098 2643997</a>
+              </div>
+             <div class="contacts__mail">
+                <a class="contacts__mail-link" href="mailto:mazhurichka@gmail">mazhurichka@gmail</a>
+             </div>
+          </div>
+          <div class="social">
+            <div class="social__text">Мои соцсети</div>
+            <div class="social__inner">
+              <a class="social__link">
+                <svg class="social__icon social__icon--viber">
+                  <use xlink:href="#viber"></use>
+                </svg>
+              </a>
+      
+              <a class="social__link">
+                <svg class="social__icon social__icon--facebook">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+      
+              <a class="social__link">
+                <svg class="social__icon social__icon--instagram">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!--social-->
+        </div>
+        <!--footer__wrapper-->
+       </div>
+      
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            © <span class="copyright__date"></span> Бюро “AA Group” Политика конфиденциальности
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/js/app.min.js"></script>
+   
+  </body>
+</html>

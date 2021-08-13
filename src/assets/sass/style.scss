@@ -1,0 +1,84 @@
+html {
+  font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+body {
+  margin: 0;
+  background-image: url(../img/main-bg.jpg);
+  background-color: rgba(13, 6, 6, .72);
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section__title {
+  margin: 6rem auto;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-shadow: 0 5px 10px rgba(13, 6, 6, .72)
+   
+}
+
+.header--scroll {
+  background-color: rgba(0, 0, 0, .98)
+}
+
+
+// vendor
+@import "vendor/slick.scss";
+@import "vars.scss";
+
+
+// blocks
+
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/services.scss";
+@import "blocks/benefits.scss";
+@import "blocks/button.scss";
+@import "blocks/works.scss";
+@import "blocks/engravis.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+

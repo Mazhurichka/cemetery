@@ -1,0 +1,43 @@
+.intro {
+  margin-top: 95px;
+  padding: 5px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.intro__slider {
+  width: 100%;
+
+  &-item {
+    max-height: 800px;
+    background-color: white;
+  }
+}
+
+.intro__slider-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.intro__inner-text {
+  font-family: "Lobster", cursive;
+  display: block;
+  padding: 30px 65px 10px 50px;
+  text-shadow: 0 2px 5px rgb(0, 0, 0);
+  color: rgb(245, 245, 245);
+  position: absolute;
+  left: 5px;
+  bottom: 55px;
+}
+
+.intro__inner-title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.intro__inner-subtitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}

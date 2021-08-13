@@ -1,0 +1,90 @@
+.footer {
+  max-height: 250px;
+  background-color: rgba(5, 2, 2, 0.8);
+
+  &__wrapper {
+    margin-top: 3rem;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(245, 245, 245, 1);
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 1rem;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 20px;
+    color: rgba(245, 245, 245, 1);
+  }
+
+  &__text {
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+    font-style: normal;
+    color: rgba(245, 245, 245, 1);
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 1rem;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 20px;
+    color: rgba(245, 245, 245, 1);
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__phone-link {
+    margin-right: 1rem;
+    font-family: "Lobster", cursive;
+    font-size: 18px;
+    color: rgba(245, 245, 245, 1);
+    text-decoration: none;
+  }
+
+  &__phone-link:hover {
+    text-decoration: underline;
+  }
+
+  &__mail {
+    margin-top: 10px;
+  }
+
+  &__mail-link {
+    font-family: "Lobster", cursive;
+    font-size: 18px;
+    color: rgba(245, 245, 245, 1);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
