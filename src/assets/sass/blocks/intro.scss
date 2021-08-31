@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   margin-top: 95px;
   padding: 5px 0;
   background-color: rgb(255, 255, 255);
@@ -6,6 +7,8 @@
 
 .intro__slider {
   width: 100%;
+  height: 500px;
+  overflow: hidden;
 
   &-item {
     max-height: 800px;
@@ -28,7 +31,7 @@
   color: rgb(245, 245, 245);
   position: absolute;
   left: 5px;
-  bottom: 55px;
+  bottom: 5%;
 }
 
 .intro__inner-title {
