@@ -1,7 +1,6 @@
 .intro {
   position: relative;
-  margin-top: 95px;
-  padding: 5px 0;
+  padding: 3px 0;
   background-color: rgb(255, 255, 255);
 }
 
@@ -23,11 +22,16 @@
   object-position: center top;
 }
 
+.intro__inner {
+  position: relative;
+}
+
 .intro__inner-text {
   font-family: "Lobster", cursive;
   display: block;
   padding: 30px 65px 10px 50px;
-  text-shadow: 0 2px 5px rgb(0, 0, 0);
+  // text-shadow: 0 2px 5px rgb(0, 0, 0);
+  @include text-shadow;
   color: rgb(245, 245, 245);
   position: absolute;
   left: 5px;
@@ -43,4 +47,74 @@
 .intro__inner-subtitle {
   margin-bottom: 2rem;
   font-size: 2rem;
+}
+
+.intro__contacts {
+  margin-bottom: -5rem;
+  margin-right: 8rem;
+  color: rgb(255, 255, 255);
+  @include text-shadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+}
+
+.intro__contacts-text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: rgb(245, 245, 245);
+
+  & > span {
+    display: block;
+    text-align: center;
+  }
+}
+
+.intro__contacts-phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__contacts-tel a {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.intro__contacts-icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0 7px 12px black;
+  fill: #fff;
+}
+
+.intro__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro__social-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+}
+
+.intro__social-icon {
+  margin-right: 10px;
+  width: 45px;
+  height: 50px;
+  fill: rgb(255, 255, 255);
+}
+
+.intro__social-subtitle {
+  align-self: center;
 }

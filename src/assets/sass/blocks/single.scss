@@ -1,0 +1,39 @@
+.single__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single__item {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transition: transform 0.2s linear, color 0.2s linear;
+
+  &:hover {
+    transform: translateY(-6px);
+
+    .single__modal {
+      color: saddlebrown;
+    }
+  }
+}
+
+.single__photo {
+  height: 100%;
+  object-fit: cover;
+}
+
+.single__modal {
+  font-size: 1.5rem;
+  font-style: italic;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.single__modal-symbol {
+  font-family: "Lobster";
+  font-weight: 700;
+}

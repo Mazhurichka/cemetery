@@ -14,13 +14,13 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -32,13 +32,28 @@ img {
   display: block;
 }
 
+html,
+body {
+  height: 100%;
+}
 
 body {
   margin: 0;
-  background-image: url(../img/bg-3.jpg);
-  background-color: rgba(13, 6, 6, .72);
-  font-family: 'Rubik Mono One', sans-serif;
+  background-image: url(../img/main-bg.jpg);
+  background-color: rgba(13, 6, 6, 0.72);
+  font-family: "Rubik Mono One", sans-serif;
   font-size: 1rem;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin-top: 95px;
+  flex-grow: 1;
 }
 
 .container {
@@ -49,30 +64,43 @@ body {
 }
 
 .section__title {
-  margin: 6rem auto;
-  font-family: 'Rubik Mono One', sans-serif;
+  margin: 4.5rem auto;
+  font-family: "Rubik Mono One", sans-serif;
   font-size: 2rem;
   color: rgba(255, 255, 255, 1);
   text-align: center;
-  text-shadow: 0 5px 10px rgba(13, 6, 6, .72)
-   
+  text-shadow: 0 5px 10px rgba(13, 6, 6, 0.72);
+}
+
+.section__subtitle {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(22, 22, 22);
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header--scroll {
-  background-color: rgba(0, 0, 0, .98)
+  background-color: rgba(0, 0, 0, 0.98);
 }
-
 
 // vendor
 @import "vendor/slick.scss";
-@import "vars.scss";
-
 
 // blocks
 
+@import "vars.scss";
+@import "mixins.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/intro.scss";
+@import "blocks/sample.scss";
 @import "blocks/services.scss";
 @import "blocks/benefits.scss";
 @import "blocks/button.scss";
@@ -80,5 +108,5 @@ body {
 @import "blocks/engravis.scss";
 @import "blocks/portfolio.scss";
 @import "blocks/social.scss";
+@import "blocks/single.scss";
 @import "blocks/footer.scss";
-

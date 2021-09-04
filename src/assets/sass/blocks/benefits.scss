@@ -1,6 +1,6 @@
 
 
-.benefits__content {
+.process__content {
     margin: 2rem 2rem;
     padding: 2rem;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 
-.benefits__item {
+.process__item {
     max-width: 500px;
     width: 100%;
     margin-bottom: 2rem;
@@ -20,16 +20,16 @@
     align-items: center;
 }
 
-.benefits__item-icon {
+.process__item-icon {
     fill: rgb(255, 255, 255);
 }
 
-.benefits__item-svg {
+.process__item-svg {
     width: 150px;
     height: 150px;
 }
 
-.benefits__item-text {
+.process__item-text {
     font-family: 'Lobster', cursive;
     font-size: 20px;
     margin-left: 2rem;
