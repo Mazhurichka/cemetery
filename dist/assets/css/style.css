@@ -342,8 +342,9 @@ body {
 
 .intro__inner-text {
     font-family: "Lobster", cursive;
+    line-height: 1.2;
     display: block;
-    padding: 30px 65px 10px 50px;
+    margin: 2rem 4rem 0.8rem 3rem;
     text-shadow: 0 7px 15px black;
     color: whitesmoke;
     position: absolute;
@@ -352,58 +353,53 @@ body {
 }
 
 .intro__inner-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 800;
 }
 
 .intro__inner-subtitle {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
 .intro__contacts {
     margin-bottom: -5rem;
-    margin-right: 8rem;
+    margin-right: 3rem;
     color: white;
     text-shadow: 0 7px 15px black;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
     position: absolute;
-    bottom: 200px;
+    bottom: 110px;
     right: 0;
-}
-
-.intro__contacts-text {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: whitesmoke;
-}
-
-.intro__contacts-text > span {
-    display: block;
-    text-align: center;
 }
 
 .intro__contacts-phone {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .intro__contacts-tel a {
-    display: block;
+    padding: .5rem;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
 
+.intro__contacts-tel a:hover {
+    border: 2px 2px 2px 2px solid white;
+    border-radius: 2.5rem;
+    background-color: #6b6b80cc;
+}
+
 .intro__contacts-icon {
-    display: flex;
+    margin: 1rem;
     width: 50px;
     height: 50px;
+    display: flex;
     border-radius: 50px;
     box-shadow: 0 7px 12px black;
     fill: #fff;
@@ -411,7 +407,6 @@ body {
 
 .intro__social {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -422,14 +417,21 @@ body {
 }
 
 .intro__social-icon {
-    margin-right: 10px;
+    margin: 1rem;
     width: 45px;
     height: 50px;
     fill: white;
 }
 
 .intro__social-subtitle {
+    padding: .5rem;
     align-self: center;
+}
+
+.intro__social-subtitle:hover {
+    border: 2px 2px 2px 2px solid white;
+    border-radius: 2.5rem;
+    background-color: #6b6b80cc;
 }
 
 .sample {
@@ -725,7 +727,7 @@ body {
     width: 250px;
     height: 250px;
     position: relative;
-    transition: transform 0.2s linear, color 0.2s linear;
+    transition: transform 0.2s linear;
 }
 
 .single__item:hover {
@@ -733,7 +735,8 @@ body {
 }
 
 .single__item:hover .single__modal {
-    color: saddlebrown;
+    color: white;
+    text-shadow: 0 7px 15px black;
 }
 
 .single__photo {
@@ -745,14 +748,11 @@ body {
 .single__modal {
     font-size: 1.5rem;
     font-style: italic;
+    color: black;
     position: absolute;
     left: 15px;
     top: 15px;
-}
-
-.single__modal-symbol {
-    font-family: "Lobster";
-    font-weight: 700;
+    transition: color .2s linear;
 }
 
 .footer {

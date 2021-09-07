@@ -9,13 +9,14 @@
   width: 250px;
   height: 250px;
   position: relative;
-  transition: transform 0.2s linear, color 0.2s linear;
+  transition: transform 0.2s linear;
 
   &:hover {
     transform: translateY(-6px);
 
     .single__modal {
-      color: saddlebrown;
+      color: rgba(255, 255, 255, 1);
+      @include text-shadow;
     }
   }
 }
@@ -28,12 +29,9 @@
 .single__modal {
   font-size: 1.5rem;
   font-style: italic;
+  color: rgb(0, 0, 0);
   position: absolute;
   left: 15px;
   top: 15px;
-}
-
-.single__modal-symbol {
-  font-family: "Lobster";
-  font-weight: 700;
+  transition:  color .2s linear;
 }

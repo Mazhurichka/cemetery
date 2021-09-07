@@ -28,8 +28,9 @@
 
 .intro__inner-text {
   font-family: "Lobster", cursive;
+  line-height: 1.2;
   display: block;
-  padding: 30px 65px 10px 50px;
+  margin: 2rem 4rem 0.8rem 3rem;
   // text-shadow: 0 2px 5px rgb(0, 0, 0);
   @include text-shadow;
   color: rgb(245, 245, 245);
@@ -39,58 +40,53 @@
 }
 
 .intro__inner-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 800;
 }
 
 .intro__inner-subtitle {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .intro__contacts {
   margin-bottom: -5rem;
-  margin-right: 8rem;
+  margin-right: 3rem;
   color: rgb(255, 255, 255);
   @include text-shadow;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
   position: absolute;
-  bottom: 200px;
+  bottom: 110px;
   right: 0;
-}
-
-.intro__contacts-text {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: rgb(245, 245, 245);
-
-  & > span {
-    display: block;
-    text-align: center;
-  }
 }
 
 .intro__contacts-phone {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .intro__contacts-tel a {
-  display: block;
+  padding: .5rem;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
+
+  &:hover {
+    border: 2px 2px 2px 2px solid rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    background-color: #6b6b80cc;
+  }
 }
 
 .intro__contacts-icon {
-  display: flex;
+  margin: 1rem;
   width: 50px;
   height: 50px;
+  display: flex;
   border-radius: 50px;
   box-shadow: 0 7px 12px black;
   fill: #fff;
@@ -98,7 +94,6 @@
 
 .intro__social {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -109,12 +104,19 @@
 }
 
 .intro__social-icon {
-  margin-right: 10px;
+  margin: 1rem;
   width: 45px;
   height: 50px;
   fill: rgb(255, 255, 255);
 }
 
 .intro__social-subtitle {
+   padding: .5rem;
   align-self: center;
+
+  &:hover {
+    border: 2px 2px 2px 2px solid rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    background-color: #6b6b80cc;
+  }
 }
