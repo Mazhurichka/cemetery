@@ -1,0 +1,44 @@
+.process__content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.process__item {
+  padding: 3rem;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.process__item-icon {
+  margin-left: 2rem;
+}
+
+.process__item-svg {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.process__item-text {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+}
+
+
+.process__item-arrow-icon {
+  margin: 2rem 0;
+  width: 60px;
+  height: 45px;
+  transform: rotate(90deg);
+  
+}

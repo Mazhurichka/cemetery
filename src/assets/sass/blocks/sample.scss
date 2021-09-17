@@ -4,6 +4,7 @@
 
 .sample__content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -59,7 +60,8 @@
 }
 
 .sample__item-subtitle {
-  font-family: "Lobster", cursive;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
   font-size: 24px;
   font-weight: 600;
   color: rgb(255, 255, 255);

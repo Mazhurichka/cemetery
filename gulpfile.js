@@ -15,7 +15,7 @@ const removeComments = require("gulp-strip-css-comments");
 const uglify = require("gulp-uglify");
 const panini = require("panini");
 const del = require("del");
-const cache = require("gulp-cache");
+const newer = require("gulp-newer");
 
 var path = {
   build: {
@@ -119,16 +119,13 @@ function js() {
 }
 
 function images() {
-  return src(path.src.images, { base: "./src/assets/img/" })
-    .pipe(imagemin())
-    .pipe(dest(path.build.images))
-    .pipe(
-      cache(
-        imagemin({
-          interlaced: true,
-        })
-      )
-    );
+  return (
+    src(path.src.images)
+      .pipe(newer(path.build.images))
+      .pipe(imagemin())
+      // .pipe(webp())
+      .pipe(dest(path.build.images))
+  );
 }
 
 function clean() {
@@ -142,7 +139,7 @@ function watchFiles() {
   gulp.watch([path.watch.images], images);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images));
+const build = gulp.series(gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;

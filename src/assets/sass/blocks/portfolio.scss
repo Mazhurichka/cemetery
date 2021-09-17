@@ -1,15 +1,17 @@
 .portfolio__slider-item {
-  margin: 0 5px;
+  margin: .3rem;
   padding: 5px;
   max-width: 600px;
-  max-height: 800px;
+  min-height: 300px;
+  object-fit: cover;
   background-color: white;
 }
 
 
 .portfolio__subtitle {
   margin: 3rem 0;
-  font-family:  'Lobster', cursive;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   text-align: center;

@@ -1,21 +1,32 @@
 .engravis__wrapper {
-    padding: 3rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
 
+.engravis__item {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.engravis__content {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
 }
 
 .engravis__text {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    font-weight: 400;
-    max-width: 40%;
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
+  width: 500px;
+  font-weight: 400;
 }
 
 .engravis__img {
-    max-width: 50%;
-}
 
+}

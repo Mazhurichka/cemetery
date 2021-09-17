@@ -37,12 +37,18 @@ body {
   height: 100%;
 }
 
+*[class$="__title"],
+*[class$="-title"],
+*[class$="subtitle"] {
+  text-shadow: 0 0 10px #000;
+}
+
 body {
   margin: 0;
-  background-image: url(../img/main-bg.jpg);
+  background-image: url(../img/bakground.jpg);
   background-color: rgba(13, 6, 6, 0.72);
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 1rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
 }
 
 .page {
@@ -63,8 +69,19 @@ body {
   padding: 0 1rem;
 }
 
+.text {
+  padding: 1rem;
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  & > span {
+    font-weight: 700;
+  }
+}
+
 .section__title {
-  margin: 4.5rem auto;
+  margin: 4.5rem auto 2rem;
   font-family: "Rubik Mono One", sans-serif;
   font-size: 2rem;
   color: rgba(255, 255, 255, 1);
@@ -73,17 +90,15 @@ body {
 }
 
 .section__subtitle {
-  font-family: "Lobster", cursive;
-  font-size: 30px;
-  font-weight: 600;
-  color: rgb(22, 22, 22);
+  margin-bottom: 3rem;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
   text-align: center;
   opacity: 1;
   transition: opacity 0.4s linear;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .header--scroll {
@@ -101,12 +116,13 @@ body {
 @import "blocks/nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/sample.scss";
+@import "blocks/about.scss";
+@import "blocks/process.scss";
 @import "blocks/services.scss";
-@import "blocks/benefits.scss";
 @import "blocks/button.scss";
 @import "blocks/works.scss";
 @import "blocks/engravis.scss";
 @import "blocks/portfolio.scss";
 @import "blocks/social.scss";
-@import "blocks/single.scss";
+@import "blocks/catalog.scss";
 @import "blocks/footer.scss";

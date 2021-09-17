@@ -27,7 +27,8 @@
 }
 
 .intro__inner-text {
-  font-family: "Lobster", cursive;
+  font-family: "Noto Serif", serif;
+  font-weight: normal;
   line-height: 1.2;
   display: block;
   margin: 2rem 4rem 0.8rem 3rem;
@@ -41,16 +42,29 @@
 
 .intro__inner-title {
   margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .intro__inner-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
-  font-size: 2rem;
+}
+
+.intro__inner-icon {
+  margin: 0.8rem;
+  width: 30px;
+  height: 30px;
 }
 
 .intro__contacts {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: -5rem;
   margin-right: 3rem;
   color: rgb(255, 255, 255);
@@ -70,15 +84,14 @@
 }
 
 .intro__contacts-tel a {
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px black;
 
   &:hover {
-    border: 2px 2px 2px 2px solid rgb(255, 255, 255);
-    border-radius: 2.5rem;
-    background-color: #6b6b80cc;
+    @include hover;
   }
 }
 
@@ -105,18 +118,18 @@
 
 .intro__social-icon {
   margin: 1rem;
-  width: 45px;
+  width: 50px;
   height: 50px;
-  fill: rgb(255, 255, 255);
+  box-shadow: 0 7px 12px black;
+  border-radius: 50px;
 }
 
 .intro__social-subtitle {
-   padding: .5rem;
+  padding: 0.5rem;
   align-self: center;
+  text-shadow: 0 0 10px black;
 
   &:hover {
-    border: 2px 2px 2px 2px solid rgb(255, 255, 255);
-    border-radius: 2.5rem;
-    background-color: #6b6b80cc;
+    @include hover;
   }
 }
