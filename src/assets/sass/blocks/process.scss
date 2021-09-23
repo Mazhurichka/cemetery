@@ -14,7 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .process__item-icon {
@@ -23,22 +22,24 @@
 
 .process__item-svg {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 
 .process__item-text {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-style: italic;
   font-size: 1.1rem;
-  margin-left: 2rem;
+  margin-left: 1.2rem;
 }
 
+.process__item-arrow {
+  width: 65px;
+  height: 45px;
+}
 
 .process__item-arrow-icon {
-  margin: 2rem 0;
-  width: 60px;
-  height: 45px;
-  transform: rotate(90deg);
-  
+  margin: 0 auto;
+  width: 100%;
+  fill: darkred;
 }
