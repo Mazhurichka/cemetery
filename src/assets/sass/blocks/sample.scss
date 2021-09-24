@@ -23,6 +23,7 @@
   height: 210px;
   box-shadow: 0 29px 24px rgba(0, 0, 0, 1);
 
+   &:hover .sample__item-title,
    &:hover .sample__item-subtitle {
     opacity: 0;
   }
@@ -59,7 +60,7 @@
   object-fit: cover;
 }
 
-.sample__item-subtitle {
+.sample__item-title {
   font-family: 'Noto Serif', serif;
   font-style: italic;
   font-size: 24px;
@@ -72,5 +73,21 @@
   position: absolute;
   left: 50%;
   top: -30%;
+  transform: translate(-50%, -50%);
+}
+
+.sample__item-subtitle {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(255, 140, 0);
+  text-align: center;
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  position: absolute;
+  left: 50%;
+  top: -7%;
   transform: translate(-50%, -50%);
 }

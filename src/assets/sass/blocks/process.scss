@@ -10,7 +10,7 @@
 
 .process__item {
   padding: 3rem;
-  width: 270px;
+  width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,12 +34,12 @@
 }
 
 .process__item-arrow {
-  width: 65px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .process__item-arrow-icon {
-  margin: 0 auto;
+  margin: 0 10px;
   width: 100%;
   fill: darkred;
 }
