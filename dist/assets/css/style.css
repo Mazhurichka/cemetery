@@ -851,6 +851,7 @@ body {
 
 .social__link {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .social__icon {
