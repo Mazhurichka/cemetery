@@ -1219,7 +1219,7 @@ body.is-using-mouse .fancybox__container :focus {
 
 .nav__list-item.active {
     display: inline-block;
-    background-color: rgba(107, 107, 128, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid white;
     border-radius: 2.5rem;
 }
@@ -1829,6 +1829,7 @@ body.is-using-mouse .fancybox__container :focus {
     -o-object-fit: cover;
     object-fit: cover;
     background-color: white;
+    cursor: pointer;
 }
 
 .portfolio__subtitle {
