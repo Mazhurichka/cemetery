@@ -1,5 +1,5 @@
 //= ../../../node_modules/jquery/dist/jquery.min.js
-//= vendor/lightbox.js
+//= vendor/fancyapp.js
 //= components/test.js
 //= components/slick.js
 //= components/date.js

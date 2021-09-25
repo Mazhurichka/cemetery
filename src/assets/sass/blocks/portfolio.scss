@@ -1,16 +1,49 @@
+.portfolio__slider-container {
+  position: relative;
+}
+
+.slider-arrow {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translate(0, -50%);
+
+  
+}
+
+.arrow {
+  position: relative;
+  width: 42px;
+  fill: #ffffff;
+  cursor: pointer;
+
+  &.slick-disabled {
+    opacity: .5;
+  }
+}
+
+.next {
+  right: -100%;
+}
+
+.prev {
+  left: -7%;
+  transform: rotate(-180deg);
+}
+
 .portfolio__slider-item {
-  margin: .3rem;
+  margin: 0.3rem;
   padding: 5px;
   max-width: 600px;
-  min-height: 300px;
+  height: 480px;
   object-fit: cover;
   background-color: white;
 }
 
-
 .portfolio__subtitle {
   margin: 3rem 0;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-style: italic;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
@@ -19,4 +52,5 @@
 
 .portfolio__photo {
   height: 100%;
+  object-fit: cover;
 }
