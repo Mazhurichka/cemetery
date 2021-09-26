@@ -83,7 +83,7 @@ body {
 }
 
 .section__title {
-    margin: 4.5rem auto 2rem;
+    margin: 4.5rem auto;
     font-family: "Rubik Mono One", sans-serif;
     font-size: 2rem;
     color: white;
@@ -1519,6 +1519,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .sample__item-subtitle {
+    width: 100%;
     font-family: 'Noto Serif', serif;
     font-style: italic;
     font-size: 1.1rem;
