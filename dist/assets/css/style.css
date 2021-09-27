@@ -1297,7 +1297,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .intro__slider-item {
-    max-height: 800px;
+    height: 800px;
     background-color: white;
 }
 
@@ -1460,6 +1460,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .sample__item {
+    margin-bottom: .8rem;
     position: relative;
     width: 210px;
     height: 210px;
