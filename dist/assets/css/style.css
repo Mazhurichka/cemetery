@@ -1538,6 +1538,7 @@ body.is-using-mouse .fancybox__container :focus {
 .universal__title {
     padding-top: 2rem;
     color: black;
+    text-align: center;
     text-shadow: none;
 }
 
@@ -1545,7 +1546,10 @@ body.is-using-mouse .fancybox__container :focus {
     width: 100%;
     background-color: white;
     border-radius: 5px;
-    text-align: center;
+}
+
+.universal__content li {
+    list-style-type: "- ";
 }
 
 .universal__text {
