@@ -1160,12 +1160,21 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 1000;
+}
+
+@media (max-width: 991px) {
+    .header {
+        font-size: 1rem;
+    }
 }
 
 .header__inner {
@@ -1192,8 +1201,9 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header__logo-text {
-    font-family: "Lobster", cursive;
-    font-size: 20px;
+    text-shadow: 0 7px 15px black;
+    font-weight: 600;
+    font-style: italic;
     color: #ffffff;
 }
 
@@ -1217,6 +1227,12 @@ body.is-using-mouse .fancybox__container :focus {
     cursor: pointer;
 }
 
+@media (max-width: 991px) {
+    .nav__list-item {
+        padding: .6rem;
+    }
+}
+
 .nav__list-item.active {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
@@ -1229,9 +1245,6 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .nav__list-link {
-    font-family: 'Noto Serif', serif;
-    font-size: 1.2rem;
-    font-weight: 400;
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -1310,25 +1323,39 @@ body.is-using-mouse .fancybox__container :focus {
     object-position: center top;
 }
 
-.intro__inner {
-    position: relative;
-}
-
 .intro__inner-text {
+    margin: 0 3rem;
     padding: 1.5rem;
     font-family: "Noto Serif", serif;
     font-weight: normal;
-    display: block;
     text-shadow: 0 7px 15px black;
-    color: whitesmoke;
-    border-radius: .7rem;
-    -webkit-backdrop-filter: brightness(0.5);
-    backdrop-filter: brightness(0.5);
+    color: white;
+    border-radius: 2.5rem;
+    -webkit-backdrop-filter: brightness(0.3);
+    backdrop-filter: brightness(0.3);
     position: absolute;
     left: 0;
     bottom: 5%;
     -webkit-animation: text-pulse 1.5s ease-in-out infinite alternate;
     animation: text-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@media (max-width: 1169px) {
+    .intro__inner-text {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .intro__inner-text {
+        bottom: 9%;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro__inner-text {
+        width: 300px;
+    }
 }
 
 @-webkit-keyframes text-pulse {
@@ -1371,19 +1398,31 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .intro__contacts {
-    font-family: "Noto Serif", serif;
-    font-size: 1.5rem;
-    font-weight: 400;
     margin-bottom: -5rem;
     margin-right: 3rem;
-    color: white;
-    text-shadow: 0 7px 15px black;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 7px 15px black;
     position: absolute;
     bottom: 110px;
     right: 0;
+}
+
+@media (max-width: 1350px) {
+    .intro__contacts {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro__contacts {
+        font-size: 1.3rem;
+    }
 }
 
 .intro__contacts-phone {
@@ -1394,8 +1433,9 @@ body.is-using-mouse .fancybox__container :focus {
 
 .intro__contacts-tel a {
     padding: 0.5rem;
-    font-size: 1.5rem;
     border: 2px solid transparent;
+    border-radius: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     color: white;
     text-shadow: 0 0 10px black;
@@ -1403,8 +1443,6 @@ body.is-using-mouse .fancybox__container :focus {
 
 .intro__contacts-tel a:hover {
     border: 2px 2px 2px 2px solid white;
-    border-radius: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .intro__contacts-icon {
@@ -1415,6 +1453,13 @@ body.is-using-mouse .fancybox__container :focus {
     border-radius: 50px;
     box-shadow: 0 7px 12px black;
     fill: #fff;
+}
+
+@media (max-width: 1169px) {
+    .intro__contacts-icon {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .intro__social {
@@ -1436,17 +1481,24 @@ body.is-using-mouse .fancybox__container :focus {
     border-radius: 50px;
 }
 
+@media (max-width: 1169px) {
+    .intro__social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .intro__social-subtitle {
     padding: 0.5rem;
     align-self: center;
     text-shadow: 0 0 10px black;
     border: 2px solid transparent;
+    border-radius: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .intro__social-subtitle:hover {
     border: 2px 2px 2px 2px solid white;
-    border-radius: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .sample {
@@ -1736,12 +1788,12 @@ body.is-using-mouse .fancybox__container :focus {
     flex-wrap: wrap;
 }
 
-.works__item:first-child {
+.works__item:not(:last-child) {
     margin-bottom: 80px;
     position: relative;
 }
 
-.works__item:first-child::after {
+.works__item:not(:last-child)::after {
     display: block;
     content: "";
     width: 100%;
@@ -1753,9 +1805,10 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .works__photo {
+    margin: 20px;
     width: 350px;
     height: 350px;
-    border: 1px solid white;
+    background: white;
     box-shadow: 0 12px 10px black;
 }
 
@@ -1764,6 +1817,13 @@ body.is-using-mouse .fancybox__container :focus {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    transform: translate(10px, 10px);
+    box-shadow: 0 26px 10px #000;
+    transition: transform 0.3s linear;
+}
+
+.works__photo img:hover {
+    transform: translate(0, 0);
 }
 
 .engravis__wrapper {
@@ -1862,9 +1922,10 @@ body.is-using-mouse .fancybox__container :focus {
 
 .social__title {
     margin-bottom: 1rem;
-    font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;
-    color: white;
+    font-weight: 600;
+    font-style: italic;
+    color: whitesmoke;
 }
 
 .social__link {
@@ -1918,28 +1979,29 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .footer {
+    font-family: "Noto Serif", sans-serif;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid white;
     max-height: 250px;
     background-color: rgba(5, 2, 2, 0.8);
 }
 
 .footer__wrapper {
-    margin-top: 3rem;
-    padding: 3rem 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 }
 
 .footer__copyright {
-    font-family: 'Noto Serif', sans-serif;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: whitesmoke;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .address {
@@ -1951,16 +2013,16 @@ body.is-using-mouse .fancybox__container :focus {
 
 .address__title {
     margin-bottom: 1rem;
-    font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;
-    color: whitesmoke;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
 }
 
 .address__text {
-    font-family: 'Noto Serif', serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
-    color: whitesmoke;
+    color: white;
 }
 
 .contacts {
@@ -1971,9 +2033,10 @@ body.is-using-mouse .fancybox__container :focus {
 
 .contacts__title {
     margin-bottom: 1rem;
-    font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;
-    color: whitesmoke;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
 }
 
 .contacts__phone {
@@ -1983,27 +2046,12 @@ body.is-using-mouse .fancybox__container :focus {
 
 .contacts__phone-link {
     margin-right: 1rem;
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
     font-size: 18px;
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
 }
 
 .contacts__phone-link:hover {
-    text-decoration: underline;
-}
-
-.contacts__mail {
-    margin-top: 10px;
-}
-
-.contacts__mail-link {
-    font-family: 'Noto Serif', serif;
-    font-size: 18px;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.contacts__mail-link:hover {
     text-decoration: underline;
 }

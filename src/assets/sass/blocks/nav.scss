@@ -5,6 +5,10 @@
 .nav__list-item {
   padding: .6rem 1rem;
   cursor: pointer;
+
+  @include lg {
+    padding: .6rem;
+  }
 }
 
 .nav__list-item.active {
@@ -19,9 +23,7 @@
 }
 
 .nav__list-link {
-  font-family: 'Noto Serif', serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+ 
   display: inline-block;
   color: white;
   text-decoration: none;

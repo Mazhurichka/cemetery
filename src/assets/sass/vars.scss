@@ -6,3 +6,17 @@ $pink: #ec3482;
 $radius: 10px;
 $radius_sm: 5px;
 $shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm: 576px;
+
+// Small tablets (portrait view)
+$screen-md: 768px;
+
+// Tablets and small desktops
+$screen-lg: 992px;
+
+// Large tablets and desktops
+$screen-xl: 1170px;
+

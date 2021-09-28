@@ -22,23 +22,36 @@
   object-position: center top;
 }
 
-.intro__inner {
-  position: relative;
-}
+// .intro__inner {
+//   position: relative;
+// }
 
 .intro__inner-text {
+  margin: 0 3rem;
   padding: 1.5rem;
   font-family: "Noto Serif", serif;
   font-weight: normal;
-  display: block;
   @include text-shadow;
-  color: rgb(245, 245, 245);
-  border-radius: .7rem;
-  backdrop-filter: brightness(0.5);
+  color: rgb(255, 255, 255);
+  border-radius: 2.5rem;
+  backdrop-filter: brightness(0.3);
   position: absolute;
   left: 0;
   bottom: 5%;
   animation: text-pulse 1.5s ease-in-out infinite alternate;
+
+
+  @include xl {
+    padding: 1rem;
+  }
+
+  @include rwd(1350) {
+    bottom: 9%;
+  }
+
+  @include lg {
+    width: 300px;
+  }
 }
 
 @keyframes text-pulse {
@@ -70,19 +83,28 @@
 }
 
 .intro__contacts {
-  font-family: "Noto Serif", serif;
-  font-size: 1.5rem;
-  font-weight: 400;
   margin-bottom: -5rem;
   margin-right: 3rem;
-  color: rgb(255, 255, 255);
-  @include text-shadow;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  @include text-shadow;
   position: absolute;
   bottom: 110px;
   right: 0;
+
+  @include rwd(1350) {
+    flex-direction: column;
+  }
+
+   @include lg {
+    font-size: 1.3rem;
+  }
+
 }
 
 .intro__contacts-phone {
@@ -93,8 +115,9 @@
 
 .intro__contacts-tel a {
   padding: 0.5rem;
-  font-size: 1.5rem;
   border: 2px solid transparent;
+   border-radius: 2.5rem;
+  background-color: rgba(0, 0, 0, .8);
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px black;
@@ -112,6 +135,11 @@
   border-radius: 50px;
   box-shadow: 0 7px 12px black;
   fill: #fff;
+
+  @include xl {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .intro__social {
@@ -123,6 +151,7 @@
   display: flex;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  
 }
 
 .intro__social-icon {
@@ -131,6 +160,12 @@
   height: 50px;
   box-shadow: 0 7px 12px black;
   border-radius: 50px;
+
+
+   @include xl {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .intro__social-subtitle {
@@ -138,6 +173,8 @@
   align-self: center;
   text-shadow: 0 0 10px black;
   border: 2px solid transparent;
+   border-radius: 2.5rem;
+  background-color: rgba(0, 0, 0, .8);
 
   &:hover {
     @include hover;

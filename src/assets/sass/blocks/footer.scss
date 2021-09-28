@@ -1,25 +1,27 @@
 .footer {
+  font-family: "Noto Serif", sans-serif;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid rgba(255, 255, 255, 1);
   max-height: 250px;
+  
   background-color: rgba(5, 2, 2, 0.8);
 
   &__wrapper {
-    margin-top: 3rem;
-    padding: 3rem 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
   }
 
   &__copyright {
-    font-family: 'Noto Serif', sans-serif;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgba(245, 245, 245, 1);
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -31,16 +33,16 @@
 
   &__title {
     margin-bottom: 1rem;
-    font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;
-    color: rgba(245, 245, 245, 1);
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
   }
 
   &__text {
-    font-family: 'Noto Serif', serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
-    color: rgba(245, 245, 245, 1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -51,9 +53,10 @@
 
   &__title {
     margin-bottom: 1rem;
-    font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;
-    color: rgba(245, 245, 245, 1);
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
   }
 
   &__phone {
@@ -63,9 +66,9 @@
 
   &__phone-link {
     margin-right: 1rem;
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
     font-size: 18px;
-    color: rgba(245, 245, 245, 1);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
   }
 
@@ -73,18 +76,5 @@
     text-decoration: underline;
   }
 
-  &__mail {
-    margin-top: 10px;
-  }
 
-  &__mail-link {
-   font-family: 'Noto Serif', serif;
-    font-size: 18px;
-    color: rgba(245, 245, 245, 1);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }

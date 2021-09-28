@@ -1,11 +1,18 @@
 .header {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   z-index: 1000;
-  
+
+
+   @include lg {
+    font-size: 1rem;
+  }
 }
 
 .header__inner {
@@ -16,7 +23,6 @@
   align-items: center;
 }
 
-
 .header__logo {
   display: flex;
   flex-direction: column;
@@ -24,7 +30,6 @@
   justify-content: center;
   text-decoration: none;
 }
-
 
 .header__logo-icon {
   fill: white;
@@ -34,8 +39,9 @@
 }
 
 .header__logo-text {
-  font-family: "Lobster", cursive;
-  font-size: 20px;
+  @include text-shadow;
+  font-weight: 600;
+  font-style: italic;
   color: #ffffff;
 }
 
@@ -49,5 +55,3 @@
     text-decoration: underline;
   }
 }
-
-

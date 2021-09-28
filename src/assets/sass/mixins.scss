@@ -4,6 +4,39 @@
 
 @mixin hover {
   border: 2px 2px 2px 2px solid rgb(255, 255, 255);
-  border-radius: 2.5rem;
-  background-color: rgba(0, 0, 0, .8);
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm - 1px}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md - 1px}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg - 1px}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl - 1px}) {
+      @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (max-width: $screen+'px') {
+      @content;
+  }
 }
