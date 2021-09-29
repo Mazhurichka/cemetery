@@ -13,6 +13,10 @@
     height: 800px;
     background-color: white;
   }
+
+  @include xl {
+    height: 410px;
+  }
 }
 
 .intro__slider-photo {
@@ -31,6 +35,7 @@
   padding: 1.5rem;
   font-family: "Noto Serif", serif;
   font-weight: normal;
+  text-align: center;
   @include text-shadow;
   color: rgb(255, 255, 255);
   border-radius: 2.5rem;
@@ -39,7 +44,6 @@
   left: 0;
   bottom: 5%;
   animation: text-pulse 1.5s ease-in-out infinite alternate;
-
 
   @include xl {
     padding: 1rem;
@@ -51,6 +55,12 @@
 
   @include lg {
     width: 300px;
+  }
+
+  @include md {
+    bottom: 30%;
+    right: 0;
+    margin: 0 auto;
   }
 }
 
@@ -66,6 +76,14 @@
 .intro__inner-title {
   font-size: 1.4rem;
   font-weight: 700;
+
+  @include md {
+    font-size: 1.1rem;
+  }
+
+  @include sm {
+   font-size: 1rem;
+  }
 }
 
 .intro__inner-subtitle {
@@ -74,6 +92,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include md {
+      display: none;
+  }
+
+   @include sm {
+ font-size: 1rem;
+  }
+
+  
 }
 
 .intro__inner-icon {
@@ -83,6 +111,7 @@
 }
 
 .intro__contacts {
+  max-width: 50%;
   margin-bottom: -5rem;
   margin-right: 3rem;
   display: flex;
@@ -101,23 +130,35 @@
     flex-direction: column;
   }
 
-   @include lg {
+  @include lg {
     font-size: 1.3rem;
   }
 
+   @include md {
+    font-size: 1.1rem;
+    left: 0;
+    bottom: 50%;
+    margin: 0 auto;
+  }
 }
 
 .intro__contacts-phone {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include md {
+    height: 30px;
+  }
+
+ 
 }
 
 .intro__contacts-tel a {
   padding: 0.5rem;
   border: 2px solid transparent;
-   border-radius: 2.5rem;
-  background-color: rgba(0, 0, 0, .8);
+  border-radius: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px black;
@@ -145,13 +186,22 @@
 .intro__social {
   display: flex;
   justify-content: space-between;
+
+   @include md {
+    flex-direction: column;
+  }
+}
+
+.intro__social-item {
+  @include md {
+    height: 60px;
+  }
 }
 
 .intro__social-link {
   display: flex;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  
 }
 
 .intro__social-icon {
@@ -161,8 +211,7 @@
   box-shadow: 0 7px 12px black;
   border-radius: 50px;
 
-
-   @include xl {
+  @include xl {
     width: 40px;
     height: 40px;
   }
@@ -173,8 +222,8 @@
   align-self: center;
   text-shadow: 0 0 10px black;
   border: 2px solid transparent;
-   border-radius: 2.5rem;
-  background-color: rgba(0, 0, 0, .8);
+  border-radius: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
 
   &:hover {
     @include hover;

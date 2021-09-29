@@ -1,3 +1,6 @@
+@import "vars.scss";
+@import "mixins.scss";
+
 html {
   font-size: 15px;
 }
@@ -64,6 +67,10 @@ body {
 .content {
   margin-top: 95px;
   flex-grow: 1;
+
+ @include xl {
+  margin-top: 80px;
+ }
 }
 
 .container {
@@ -91,6 +98,11 @@ body {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   text-shadow: 0 5px 10px rgba(13, 6, 6, 0.72);
+
+  @include xl {
+    margin: 3rem auto;
+    font-size: 1.8rem;
+  }
 }
 
 .section__subtitle {
@@ -115,8 +127,7 @@ body {
 
 // blocks
 
-@import "vars.scss";
-@import "mixins.scss";
+
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/intro.scss";

@@ -1,5 +1,12 @@
+.nav {
+ @include md {
+   display: none;
+
+ }
+}
+
 .nav__list {
-  display: flex;
+display: flex;
 }
 
 .nav__list-item {
@@ -68,6 +75,11 @@
       transform: translateX(50%);
     }
   }
+
+   @include md {
+   display: block;
+   
+ }
 }
 
 .burger__line {
