@@ -8,12 +8,20 @@
      @include lg {
     margin-top: 100px;
   }
+
+  @include md {
+    margin-top: 45px;
+  }
 }
 
 .sample__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include md {
+   justify-content: center;
+  }
 
  
 }
@@ -53,6 +61,11 @@
     width: 137px;
     height: 137px;
   }
+
+   @include md {
+    margin: 2.5rem 1rem;
+  }
+
 }
 
 .sample__item-svg {

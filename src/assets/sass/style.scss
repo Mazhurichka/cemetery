@@ -71,6 +71,11 @@ body {
  @include xl {
   margin-top: 80px;
  }
+
+  @include md {
+    margin-top: 75px;
+  }
+
 }
 
 .container {
