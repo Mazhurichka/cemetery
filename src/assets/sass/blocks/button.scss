@@ -1,8 +1,8 @@
 .button--dark {
   font-family: "Roboto",serif;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 400;
-  padding: 15px 25px;
+  padding: 1rem 1.8rem;
   background-color: rgba(107, 107, 128, 0.8);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 2.5rem;
@@ -14,4 +14,9 @@
   transform: translate(-50%, -50%);
   transition: opacity .4s linear;
   cursor: pointer;
+
+  @include sm {
+    padding: .5rem 1rem;
+    font-size: .8rem;
+  }
 }

@@ -1,11 +1,11 @@
 .sample {
-    margin-top: 120px;
+  margin-top: 120px;
 
-    @include xl {
-      margin-top: 95px;
-    }
+  @include xl {
+    margin-top: 95px;
+  }
 
-     @include lg {
+  @include lg {
     margin-top: 100px;
   }
 
@@ -20,25 +20,21 @@
   justify-content: space-between;
 
   @include md {
-   justify-content: center;
+    justify-content: center;
   }
-
- 
 }
 
-
 .sample__item {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   position: relative;
   width: 210px;
   height: 210px;
   box-shadow: 0 29px 24px rgba(0, 0, 0, 1);
 
-   &:hover .sample__item-title,
-   &:hover .sample__item-subtitle {
+  &:hover .sample__item-title,
+  &:hover .sample__item-subtitle {
     opacity: 0;
   }
-
 
   & > button {
     opacity: 0;
@@ -57,15 +53,14 @@
     height: 178px;
   }
 
-   @include lg {
+  @include lg {
     width: 137px;
     height: 137px;
   }
 
-   @include md {
+  @include md {
     margin: 2.5rem 1rem;
   }
-
 }
 
 .sample__item-svg {
@@ -73,7 +68,7 @@
   height: 50px;
   fill: rgb(255, 255, 255);
   opacity: 0;
-  transition: opacity .4s linear;
+  transition: opacity 0.4s linear;
   position: absolute;
   left: 50%;
   top: -30%;
@@ -84,8 +79,8 @@
     height: 35px;
   }
 
-   @include lg {
-     width: 30px;
+  @include lg {
+    width: 30px;
     height: 30px;
   }
 }
@@ -96,12 +91,11 @@
   object-fit: cover;
 }
 
-.sample__item-title {
-  font-family: 'Noto Serif', serif;
+.sample__item-text {
+  width: 100%;
+  font-family: "Noto Serif", serif;
   font-style: italic;
-  font-size: 1.6rem;
   font-weight: 600;
-  color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0 8px 15px rgba(0, 0, 0, 1);
   opacity: 1;
@@ -110,37 +104,30 @@
   left: 50%;
   top: -30%;
   transform: translate(-50%, -50%);
+}
 
-   @include xl {
+.sample__item-title {
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+
+  @include xl {
     font-size: 1.3rem;
   }
 
-   @include lg {
+  @include lg {
     font-size: 1rem;
   }
 }
 
 .sample__item-subtitle {
-  width: 100%;
-  font-family: 'Noto Serif', serif;
-  font-style: italic;
   font-size: 1.1rem;
-  font-weight: 600;
   color: rgb(255, 140, 0);
-  text-align: center;
-  text-shadow: 0 8px 15px rgba(0, 0, 0, 1);
-  opacity: 1;
-  transition: opacity 0.4s linear;
-  position: absolute;
-  left: 50%;
-  top: -7%;
-  transform: translate(-50%, -50%);
 
   @include xl {
     font-size: 1rem;
   }
 
-   @include xl {
-    font-size: .8rem;
+  @include xl {
+    font-size: 0.8rem;
   }
 }

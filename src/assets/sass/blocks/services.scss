@@ -1,6 +1,4 @@
 .services {
-  margin-bottom: 60px;
-
   & > span {
     display: block;
   }
@@ -10,13 +8,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include xl {
+    justify-content: center;
+  }
 }
 
 .services__item {
   max-width: 33, 33333%;
   width: 300px;
   height: 300px;
-  margin-bottom: 3rem;
+  margin: 2rem;
   box-shadow: 0 29px 24px rgba(0, 0, 0, 1);
   color: rgb(0, 0, 0);
   position: relative;
@@ -32,6 +34,18 @@
   &:hover > button {
     opacity: 1;
   }
+
+  @include md {
+    margin: 1rem;
+   
+    width: 200px;
+    height: 200px;
+  }
+
+  @include sm {
+    width: 137px;
+    height: 137px;
+  }
 }
 
 .services__item-img {
@@ -41,7 +55,7 @@
 }
 
 .services__item-subtitle {
- font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -52,4 +66,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+
+   
+  @include md {
+    font-size: 1.3rem;
+  }
+
+  @include sm {
+    font-size: 1rem;
+  }
 }
