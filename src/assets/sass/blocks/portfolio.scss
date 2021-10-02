@@ -1,5 +1,10 @@
 .portfolio__slider-container {
   position: relative;
+
+  @include rwd(1024) {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .slider-arrow {
@@ -35,11 +40,15 @@
 .portfolio__slider-item {
   margin: 0.3rem;
   padding: 5px;
-  max-width: 600px;
+  max-width: 400px;
   height: 480px;
   object-fit: cover;
   background-color: white;
   cursor: pointer;
+
+    @include lg {
+    height: 380px;
+  }
 }
 
 .portfolio__subtitle {

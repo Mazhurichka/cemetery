@@ -3,26 +3,55 @@
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
+
+ 
 }
 
 .engravis__item {
-  margin: 2rem 0;
+  margin-top: 2rem;
   width: 100%;
+
+   @include lg {
+    width: 75%;
+  }
+
+  @include md {
+    width: 100%;
+  }
 }
 
 .engravis__content {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 20px;
+
+   @include xl {
+    
+    justify-content: center;
+  }
 }
 
 .engravis__text {
-  font-family: 'Noto Serif', serif;
+  max-width: 600px;
+  width: 100%;
+  font-family: "Noto Serif", serif;
   font-size: 18px;
-  width: 500px;
   font-weight: 400;
+
+   @include xl {
+    max-width: 500px;
+  }
 }
+
+.engravis__img {
+  max-width: 600px;
+  
+   @include xl {
+    max-width: 400px;
+  }
+}
+ 
