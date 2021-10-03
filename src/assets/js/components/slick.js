@@ -25,7 +25,8 @@ portfolioSlider.slick({
     {
       breakpoint: 1024,
       settings: {
-        arrows: true,
+        arrows: false,
+        dots: true,
         centerMode: false,
         centerPadding: "40px",
         slidesToShow: 3,

@@ -1,10 +1,21 @@
+.catalog {
+  margin: 3rem auto ;
+}
+
+
 .catalog__gallery {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+
+    @include md {
+   justify-content: space-evenly;
+  }
+
+  
 }
 
 .catalog__item {
-  margin-right: 40px;
   margin-bottom: 40px;
   width: 250px;
   height: 250px;
@@ -19,6 +30,13 @@
       @include text-shadow;
     }
   }
+
+  @include xl {
+    width: 230px;
+    height: 230px;
+  }
+
+    
 }
 
 .catalog__photo {
