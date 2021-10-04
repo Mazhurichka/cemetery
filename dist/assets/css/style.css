@@ -2246,44 +2246,67 @@ body.is-using-mouse .fancybox__container :focus {
 
 .portfolio__slider-container {
     position: relative;
+    margin-top: 5.33rem;
 }
 
-.slider-arrow {
+.portfolio__slider-container .slick-dots {
+    top: -5%;
+    height: 50px;
+}
+
+.portfolio__slider-container .slick-dots > li button {
+    width: 15px;
+    height: 15px;
+    background: white;
+}
+
+.portfolio__slider-container .slick-dots > li button::before {
+    content: "";
+}
+
+.portfolio__slider-container .slick-dots > li.slick-active button {
+    background: #4c4a4a;
+}
+
+.gallary-arrow {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    transform: translate(0, -50%);
 }
 
-.arrow {
-    position: relative;
+@media (max-width: 1299px) {
+    .gallary-arrow {
+        display: none;
+    }
+}
+
+.gallary-arrow__prev, .gallary-arrow__next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     width: 42px;
     fill: #ffffff;
     cursor: pointer;
 }
 
-.arrow.slick-disabled {
-    opacity: .5;
+.gallary-arrow__prev.slick-disabled, .gallary-arrow__next.slick-disabled {
+    opacity: 0.5;
 }
 
-.next {
-    right: -100%;
-}
-
-.prev {
-    left: -7%;
+.gallary-arrow__prev {
     transform: rotate(-180deg);
+    left: -5%;
+}
+
+.gallary-arrow__next {
+    right: -5%;
 }
 
 .portfolio__slider-item {
     margin: 0.3rem;
-    padding: 5px;
-    max-width: 400px;
     height: 480px;
     -o-object-fit: cover;
     object-fit: cover;
-    background-color: white;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -2300,6 +2323,7 @@ body.is-using-mouse .fancybox__container :focus {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    border: 4px solid white;
 }
 
 .social {

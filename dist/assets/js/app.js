@@ -5985,21 +5985,19 @@ introSlider.slick({
 portfolioSlider.slick({
   infinite: false,
   speed: 1000,
+  centerMode: false,
   slidesToShow: 4,
   slidesToScroll: 4,
   rows: 2,
+  prevArrow: $(".gallary-arrow__prev"),
+  nextArrow: $(".gallary-arrow__next"),
   arrows: true,
-  prevArrow: $(".prev"),
-  nextArrow: $(".next"),
+  dots: true,
 
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1300,
       settings: {
-        arrows: false,
-        dots: true,
-        centerMode: false,
-        centerPadding: "40px",
         slidesToShow: 3,
         slidesToScroll: 3,
       },
@@ -6007,33 +6005,19 @@ portfolioSlider.slick({
     {
       breakpoint: 768,
       settings: {
-        rows: 2,
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
         slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
         slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
   ],
 });
-
-// $(".prev").on("click", function () {
-//   portfolioSlider.slick("slickPrev");
-// });
-
-// $(".next").on("click", function () {
-//   portfolioSlider.slick("slickNext");
-// });
 const getFullYear = new Date().getFullYear();
 
 
