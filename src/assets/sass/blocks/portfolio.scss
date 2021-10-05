@@ -1,5 +1,9 @@
 .portfolio {
   margin-bottom: 6rem;
+
+  @include sm {
+    margin-bottom: 1rem;
+  }
 }
 
 .portfolio__slider-container {
@@ -9,6 +13,12 @@
   .slick-dots {
     top: -5%;
     height: 50px;
+
+    @include sm {
+      position: static;
+      top: 0;
+      height: initial;
+    }
 
     & > li button {
       width: 15px;
@@ -24,37 +34,53 @@
       background: rgb(76, 74, 74);
     }
   }
+
+  @include sm {
+    width: 250px;
+    margin: auto;
+  }
 }
 
 .gallary-arrow {
   width: 100%;
 
-  @include rwd(1299) {
-    display: none;
-  }
-
   &__prev,
   &__next {
+    transform: initial;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     width: 42px;
+    height: 42px;
     fill: #ffffff;
     cursor: pointer;
 
     &.slick-disabled {
       opacity: 0.5;
     }
+
+    @include sm {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   &__prev {
     transform: rotate(-180deg);
     left: -5%;
+
+    @include sm {
+      left: -12%;
+    }
   }
 
   &__next {
     right: -5%;
+
+    @include sm {
+      right: -12%;
+    }
   }
 }
 
