@@ -15,12 +15,23 @@ $(function () {
   });
 
   function changeHeaderColor() {
-    if (scrollTop >= introHeight) {
+    if (scrollTop >= headerHeight) {
       header.addClass("header--dark");
     } else {
       header.removeClass("header--dark");
     }
   }
+});
+$(function () {
+  let burger = $(".burger");
+  let nav = $(".nav");
+
+  function showBurgerMenu() {
+    burger.toggleClass("active");
+    nav.toggleClass("nav--mobile");
+  }
+
+  burger.on("click", showBurgerMenu);
 });
 // @fancyapps/ui/Fancybox v4.0.5
 !(function (t, e) {

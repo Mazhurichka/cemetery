@@ -13,7 +13,7 @@ $(function () {
   });
 
   function changeHeaderColor() {
-    if (scrollTop >= introHeight) {
+    if (scrollTop >= headerHeight) {
       header.addClass("header--dark");
     } else {
       header.removeClass("header--dark");
