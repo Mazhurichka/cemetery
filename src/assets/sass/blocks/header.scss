@@ -1,5 +1,5 @@
 .header {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.2rem;
   font-weight: 400;
   width: 100%;
@@ -8,11 +8,15 @@
   top: 0;
   right: 0;
   z-index: 1000;
+  transition: background-color 0.3s linear;
 
-
-   @include lg {
+  @include lg {
     font-size: 1rem;
   }
+}
+
+.header--dark {
+  background-color: rgba(14, 14, 14, 0.97);
 }
 
 .header__inner {
@@ -25,7 +29,6 @@
   @include xl {
     height: 80px;
   }
-  
 }
 
 .header__logo {

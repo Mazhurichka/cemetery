@@ -141,10 +141,6 @@ body {
     transition: opacity 0.4s linear;
 }
 
-.header--scroll {
-    background-color: rgba(0, 0, 0, 0.98);
-}
-
 /* Slider */
 .slick-slider {
     position: relative;
@@ -1198,7 +1194,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header {
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
     font-size: 1.2rem;
     font-weight: 400;
     width: 100%;
@@ -1207,12 +1203,17 @@ body.is-using-mouse .fancybox__container :focus {
     top: 0;
     right: 0;
     z-index: 1000;
+    transition: background-color 0.3s linear;
 }
 
 @media (max-width: 991px) {
     .header {
         font-size: 1rem;
     }
+}
+
+.header--dark {
+    background-color: rgba(14, 14, 14, 0.97);
 }
 
 .header__inner {
