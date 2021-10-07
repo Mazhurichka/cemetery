@@ -25,8 +25,9 @@ $(function () {
   // ==================scroll smooth=====================
 
   let links = $("[data-scroll]");
-  console.log(windw);
-  if (location.pathname !== "/index.html") {
+  console.log(window);
+  if (!location.pathname.includes("/index.html")) {
+    alert('NE')
   } else {
     links.on("click", function (event) {
       event.preventDefault();

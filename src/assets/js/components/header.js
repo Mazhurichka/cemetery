@@ -24,7 +24,8 @@ $(function () {
 
   let links = $("[data-scroll]");
   console.log(window);
-  if (location.pathname !== "/index.html") {
+  if (!location.pathname.includes("/index.html")) {
+    alert('NE')
   } else {
     links.on("click", function (event) {
       event.preventDefault();
