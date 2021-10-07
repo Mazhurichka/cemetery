@@ -23,6 +23,7 @@ $(function () {
   // ==================scroll smooth=====================
 
   let links = $("[data-scroll]");
+  console.log(location);
   if (location.pathname !== "/index.html") {
   } else {
     links.on("click", function (event) {
