@@ -1,6 +1,6 @@
 $(function () {
-  let burger = $(".burger");
-  let nav = $(".nav");
+  let burger = $("#burger");
+  let nav = $("#nav");
 
   function showBurgerMenu() {
     burger.toggleClass("active");
