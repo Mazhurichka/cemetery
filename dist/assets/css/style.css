@@ -65,7 +65,7 @@ body.no-scroll {
 }
 
 body.show-nav .header {
-    background-color: rgba(14, 14, 14, 0.97);
+    background-color: black;
 }
 
 .page {
@@ -1229,7 +1229,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header--dark {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
 }
 
 .header__inner {
@@ -1283,7 +1283,7 @@ body.is-using-mouse .fancybox__container :focus {
     .nav {
         width: 100%;
         height: calc(100vh - 80px);
-        background-color: rgba(50, 50, 50, 0.87);
+        background-color: rgba(0, 0, 0, 0.93);
         position: absolute;
         top: 100%;
         left: 0;
