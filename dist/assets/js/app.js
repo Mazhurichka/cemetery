@@ -25,7 +25,7 @@ $(function () {
   // ==================scroll smooth=====================
 
   let links = $("[data-scroll]");
-  console.log(window);
+  
   if (!location.pathname.includes("/index.html")) {
   } else {
     links.on("click", function (event) {
@@ -34,7 +34,7 @@ $(function () {
       let scrollElement = $(this).data("scroll");
       let scrollElementPosition = $(scrollElement).offset().top;
 
-      console.log(scrollElementPosition);
+      
 
       $("html, body").animate(
         {
@@ -47,7 +47,9 @@ $(function () {
 
   // =====================scroll spy===========================
   let windowHeight = $(window).height();
+
   scrollSpy(scrollTop);
+  
   $(window).on("scroll", function () {
     scrollTop = $(this).scrollTop();
     scrollSpy(scrollTop);

@@ -32,8 +32,7 @@
 .nav__list-item {
   padding: 0.6rem 1rem;
   cursor: pointer;
-  // transition: background-color .2s linear;
-  transition: border .2s linear;
+  
 
   @include lg {
     padding: 0.6rem;
@@ -48,8 +47,9 @@
 .nav__list-item.active {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 3, 3);
   border-radius: 2.5rem;
+  transition: background-color .2s linear, border .2s linear;
 
   &:hover .nav__list-link:after {
     width: 0;
