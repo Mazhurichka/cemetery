@@ -2,21 +2,18 @@
   @include md {
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(50, 50, 50, 0.87);
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
     transform: translateX(100%);
-    transition: transform .4s ease-out;
-
-    
+    transition: transform 0.4s ease-out;
   }
 }
 
 .nav--mobile {
   transform: translateX(0);
-
 }
 
 .nav__list {
@@ -32,7 +29,6 @@
 .nav__list-item {
   padding: 0.6rem 1rem;
   cursor: pointer;
-  
 
   @include lg {
     padding: 0.6rem;
@@ -47,9 +43,9 @@
 .nav__list-item.active {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgb(255, 3, 3);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 2.5rem;
-  transition: background-color .2s linear, border .2s linear;
+  transition: background-color 0.2s linear, border 0.2s linear;
 
   &:hover .nav__list-link:after {
     width: 0;

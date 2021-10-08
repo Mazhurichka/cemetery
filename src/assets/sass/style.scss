@@ -41,7 +41,7 @@ html,
 body {
   height: 100%;
   scroll-padding-top: 95px;
-
+  
 
   @include lg {
     scroll-padding-top: 80px;
@@ -60,6 +60,17 @@ body {
   background-color: rgba(13, 6, 6, 0.72);
   font-family: "Noto Serif", serif;
   font-size: 1.2rem;
+  
+  &.no-scroll {
+    overflow: hidden;
+
+  }
+
+  &.show-nav .header {
+    background-color: rgba(14, 14, 14, 0.97);
+
+
+  }
 }
 
 .page {
