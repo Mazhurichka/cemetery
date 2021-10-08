@@ -40,14 +40,18 @@ img {
 html,
 body {
   height: 100%;
- 
+  scroll-padding-top: 95px;
+
+
+  @include lg {
+    scroll-padding-top: 80px;
+  }
 }
 
 *[class$="__title"],
 *[class$="-title"],
 *[class$="subtitle"] {
   text-shadow: 0 0 10px #000;
-  
 }
 
 body {
@@ -62,21 +66,20 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-   scroll-margin-top: 95px;
+  scroll-margin-top: 95px;
 }
 
 .content {
   margin-top: 95px;
   flex-grow: 1;
 
- @include xl {
-  margin-top: 80px;
- }
+  @include xl {
+    margin-top: 80px;
+  }
 
   @include md {
     margin-top: 75px;
   }
-
 }
 
 .container {
@@ -97,12 +100,13 @@ body {
   }
 
   @include lg {
-    margin: 0 0 .7rem;
+    margin: 0 0 0.7rem;
   }
 }
 
 .section__title {
   margin: 4.5rem auto;
+
   font-family: "Rubik Mono One", sans-serif;
   font-size: 2rem;
   color: rgba(255, 255, 255, 1);
@@ -136,14 +140,11 @@ body {
   transition: opacity 0.4s linear;
 }
 
-
-
 // vendor
 @import "vendor/slick.scss";
 @import "vendor/fancyapp.scss";
 
 // blocks
-
 
 @import "blocks/header.scss";
 @import "blocks/nav.scss";

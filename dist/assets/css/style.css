@@ -36,6 +36,14 @@ img {
 html,
 body {
     height: 100%;
+    scroll-padding-top: 95px;
+}
+
+@media (max-width: 991px) {
+    html,
+    body {
+        scroll-padding-top: 80px;
+    }
 }
 
 *[class$="__title"],
@@ -96,7 +104,7 @@ body {
 
 @media (max-width: 991px) {
     .text {
-        margin: 0 0 .7rem;
+        margin: 0 0 0.7rem;
     }
 }
 
@@ -1296,7 +1304,7 @@ body.is-using-mouse .fancybox__container :focus {
 .nav__list-item {
     padding: 0.6rem 1rem;
     cursor: pointer;
-    transition: background-color .2s linear, border .2s linear;
+    transition: border .2s linear;
 }
 
 @media (max-width: 991px) {
