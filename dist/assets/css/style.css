@@ -1247,7 +1247,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header__logo {
-    padding-left: 3rem;
+    padding-left: 3.2rem;
     font-size: 1.2rem;
     font-weight: 600;
     font-style: normal;
@@ -1267,13 +1267,13 @@ body.is-using-mouse .fancybox__container :focus {
 .header__logo-text {
     position: absolute;
     top: 34px;
-    left: 0;
+    left: 5;
 }
 
 .header__logo-text-2 {
     position: absolute;
     top: 34px;
-    left: 86px;
+    left: 87px;
 }
 
 .header__language a {
