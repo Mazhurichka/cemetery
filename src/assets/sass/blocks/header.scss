@@ -52,40 +52,50 @@
 }
 
 .header__logo-icon {
-  width: 87%;
-  height: auto;
+  max-width: 93%;
+  max-height: 53px;
   fill: white;
   cursor: pointer;
 
    @include lg {
-   width: 73%;
+   max-width: 73%;
   }
 
   @include md {
-   width: 63%;
+   max-width: 63%;
   }
 }
 
 .header__logo-text {
   position: absolute;
-  top: 40%;
+  top: 26%;
   left: 1%;
 
+   @include lg {
+     top: 29%;
+     left: 6%;
+  }
+
    @include md {
-     top:42%;
-     left: 12%;
+     top: 33%;
+     left: 15%;
   }
 
 }
 
 .header__logo-text-2 {
   position: absolute;
-  top: 40%;
+  top: 26%;
   left: 79%;
 
+   @include lg {
+     top: 29%;
+     left: 74%;
+  }
+
    @include md {
-     top: 42%;
-     left: 73%;
+     top: 33%;
+     left: 70%;
   }
 }
 

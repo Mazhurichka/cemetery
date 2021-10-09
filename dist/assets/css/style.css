@@ -1271,47 +1271,61 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header__logo-icon {
-    width: 87%;
-    height: auto;
+    max-width: 93%;
+    max-height: 53px;
     fill: white;
     cursor: pointer;
 }
 
 @media (max-width: 991px) {
     .header__logo-icon {
-        width: 73%;
+        max-width: 73%;
     }
 }
 
 @media (max-width: 767px) {
     .header__logo-icon {
-        width: 63%;
+        max-width: 63%;
     }
 }
 
 .header__logo-text {
     position: absolute;
-    top: 40%;
+    top: 26%;
     left: 1%;
+}
+
+@media (max-width: 991px) {
+    .header__logo-text {
+        top: 29%;
+        left: 6%;
+    }
 }
 
 @media (max-width: 767px) {
     .header__logo-text {
-        top: 42%;
-        left: 12%;
+        top: 33%;
+        left: 15%;
     }
 }
 
 .header__logo-text-2 {
     position: absolute;
-    top: 40%;
+    top: 26%;
     left: 79%;
+}
+
+@media (max-width: 991px) {
+    .header__logo-text-2 {
+        top: 29%;
+        left: 74%;
+    }
 }
 
 @media (max-width: 767px) {
     .header__logo-text-2 {
-        top: 42%;
-        left: 73%;
+        top: 33%;
+        left: 70%;
     }
 }
 
