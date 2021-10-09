@@ -2557,7 +2557,7 @@ body.is-using-mouse .fancybox__container :focus {
 .catalog__item:hover .catalog__modal {
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
     text-shadow: 0 7px 15px black;
 }
 
@@ -2580,7 +2580,7 @@ body.is-using-mouse .fancybox__container :focus {
     font-style: italic;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 1.5rem;
     position: absolute;
     left: 15px;
