@@ -32,25 +32,42 @@
 }
 
 .header__logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // text-decoration: none;
+  position: relative;
 }
 
 .header__logo-icon {
   fill: white;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 7rem;
   cursor: pointer;
 }
 
 .header__logo-text {
+  text-transform: uppercase;
+   position: absolute;
   @include text-shadow;
   font-weight: 600;
   font-style: italic;
   color: #ffffff;
+  top: 40px;
+  left: -41px;
+ 
+}
+
+.header__logo-text-2 {
+  text-transform: uppercase;
+  position: absolute;
+   @include text-shadow;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffffff;
+  top: 40px;
+  left: 41px;
 }
 
 .header__language a {
