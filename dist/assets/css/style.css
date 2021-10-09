@@ -1247,36 +1247,33 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .header__logo {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow: 0 7px 15px black;
+    color: #ffffff;
     position: relative;
 }
 
 .header__logo-icon {
     fill: white;
     width: 4rem;
-    height: 7rem;
+    height: 6rem;
     cursor: pointer;
 }
 
 .header__logo-text {
-    text-transform: uppercase;
     position: absolute;
-    text-shadow: 0 7px 15px black;
-    font-weight: 600;
-    font-style: italic;
-    color: #ffffff;
-    top: 40px;
-    left: -41px;
+    top: 34px;
+    left: 0;
 }
 
 .header__logo-text-2 {
-    text-transform: uppercase;
     position: absolute;
-    text-shadow: 0 7px 15px black;
-    font-weight: 600;
-    font-style: italic;
-    color: #ffffff;
-    top: 40px;
-    left: 41px;
+    top: 34px;
+    left: 86px;
 }
 
 .header__language a {

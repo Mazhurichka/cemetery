@@ -32,44 +32,35 @@
 }
 
 .header__logo {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  // text-decoration: none;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  @include text-shadow;
+  color: #ffffff;
   position: relative;
 }
 
 .header__logo-icon {
   fill: white;
   width: 4rem;
-  height: 7rem;
+  height: 6rem;
   cursor: pointer;
 }
 
 .header__logo-text {
-  text-transform: uppercase;
-   position: absolute;
-  @include text-shadow;
-  font-weight: 600;
-  font-style: italic;
-  color: #ffffff;
-  top: 40px;
-  left: -41px;
+  position: absolute;
+  top: 34px;
+  left: 0;
  
 }
 
 .header__logo-text-2 {
-  text-transform: uppercase;
   position: absolute;
-   @include text-shadow;
-  font-weight: 600;
-  font-style: italic;
-  color: #ffffff;
-  top: 40px;
-  left: 41px;
+  top: 34px;
+   left: 86px;
 }
-
 .header__language a {
   font-family: "Roboto", serif;
   font-weight: 400;
