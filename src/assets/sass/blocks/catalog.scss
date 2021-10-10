@@ -28,7 +28,7 @@
     .catalog__modal {
       background-color: rgba(255, 255, 255, 1);
       color: rgba(0, 0, 0, 1);
-      border: 2px solid rgb(0, 0, 0);
+      border: 1px solid rgb(0, 0, 0);
       @include text-shadow;
     }
   }
@@ -52,7 +52,7 @@
   font-style: italic;
   background-color: rgba(0, 0, 0, 1);
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 1.5rem;
   position: absolute;
   left: 15px;

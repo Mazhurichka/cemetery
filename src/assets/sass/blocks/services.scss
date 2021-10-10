@@ -27,11 +27,11 @@
     opacity: 0;
   }
 
-  & > button {
+  & > .button {
     opacity: 0;
   }
 
-  &:hover > button {
+  &:hover > .button {
     opacity: 1;
   }
 
