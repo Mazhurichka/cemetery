@@ -24,6 +24,10 @@
   &__link {
     cursor: pointer;
     text-decoration: none;
+
+    span {
+      font-size: 0;
+    }
   }
 
   &__icon {

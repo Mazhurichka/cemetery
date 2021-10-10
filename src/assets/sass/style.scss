@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;400&family=Rubik+Mono+One&display=swap");
+
 @import "vars.scss";
 @import "mixins.scss";
 
@@ -41,7 +43,6 @@ html,
 body {
   height: 100%;
   scroll-padding-top: 95px;
-  
 
   @include lg {
     scroll-padding-top: 80px;
@@ -60,16 +61,13 @@ body {
   background-color: rgba(13, 6, 6, 0.72);
   font-family: "Noto Serif", serif;
   font-size: 1.2rem;
-  
+
   &.no-scroll {
     overflow: hidden;
-
   }
 
   &.show-nav .header {
     background-color: rgba(0, 0, 0, 1);
-
-
   }
 }
 
@@ -152,8 +150,8 @@ body {
 }
 
 // vendor
-@import "vendor/slick.scss";
 @import "vendor/fancyapp.scss";
+@import "vendor/slick.scss";
 
 // blocks
 
