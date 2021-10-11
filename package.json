@@ -30,6 +30,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
     "panini": "^1.7.1"
   }
 }

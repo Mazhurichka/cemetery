@@ -16,6 +16,7 @@ const uglify = require("gulp-uglify");
 const panini = require("panini");
 const del = require("del");
 const newer = require("gulp-newer");
+// const webp = require("gulp-webp");
 
 var path = {
   build: {
@@ -123,6 +124,7 @@ function images() {
     src(path.src.images)
       .pipe(newer(path.build.images))
       .pipe(imagemin())
+      // .pipe(dest(path.build.images))
       // .pipe(webp())
       .pipe(dest(path.build.images))
   );
