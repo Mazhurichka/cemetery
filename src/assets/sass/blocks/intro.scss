@@ -50,11 +50,8 @@
   }
 
   @include rwd(1350) {
+    width: 320px;
     bottom: 9%;
-  }
-
-  @include lg {
-    width: 300px;
   }
 
   @include md {
@@ -82,7 +79,7 @@
   }
 
   @include sm {
-   font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -94,18 +91,16 @@
   align-items: center;
 
   @include md {
-      display: none;
+    display: none;
   }
 
-   @include sm {
- font-size: 1rem;
+  @include sm {
+    font-size: 1rem;
   }
-
-  
 }
 
 .intro__inner-icon {
-  margin: 0.8rem;
+  margin: 0.6rem;
   width: 30px;
   height: 30px;
 }
@@ -134,7 +129,7 @@
     font-size: 1.3rem;
   }
 
-   @include md {
+  @include md {
     font-size: 1.1rem;
     left: 0;
     bottom: 50%;
@@ -150,8 +145,6 @@
   @include md {
     height: 30px;
   }
-
- 
 }
 
 .intro__contacts-tel a {
@@ -187,7 +180,7 @@
   display: flex;
   justify-content: space-between;
 
-   @include md {
+  @include md {
     flex-direction: column;
   }
 }

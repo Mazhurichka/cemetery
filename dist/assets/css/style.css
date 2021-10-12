@@ -1420,13 +1420,8 @@ body.is-using-mouse .fancybox__container :focus {
 
 @media (max-width: 1350px) {
     .intro__inner-text {
+        width: 320px;
         bottom: 9%;
-    }
-}
-
-@media (max-width: 991px) {
-    .intro__inner-text {
-        width: 300px;
     }
 }
 
@@ -1496,7 +1491,7 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .intro__inner-icon {
-    margin: 0.8rem;
+    margin: 0.6rem;
     width: 30px;
     height: 30px;
 }
