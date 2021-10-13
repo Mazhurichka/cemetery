@@ -1,0 +1,6 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/rmyha174/public_html
+        - /bin/cp *.html $DEPLOYPATH
+        - /bin/cp -R dist $DEPLOYPATH
