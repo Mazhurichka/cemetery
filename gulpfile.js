@@ -16,7 +16,6 @@ const uglify = require("gulp-uglify");
 const panini = require("panini");
 const del = require("del");
 const newer = require("gulp-newer");
-// const webp = require("gulp-webp");
 
 var path = {
   build: {
@@ -29,13 +28,13 @@ var path = {
     html: "src/*.html",
     css: "src/assets/sass/style.scss",
     js: "src/assets/js/*.js",
-    images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,json}",
+    images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp,json}",
   },
   watch: {
     html: "src/**/*.html",
     css: "src/assets/sass/**/*.scss",
     js: "src/assets/js/**/*.js",
-    images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,json}",
+    images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp,json}",
   },
   clean: "./dist",
 };
@@ -46,6 +45,7 @@ function browserSync(done) {
       baseDir: "./dist/",
     },
     port: 3001,
+    notify: false,
   });
 }
 
@@ -124,8 +124,6 @@ function images() {
     src(path.src.images)
       .pipe(newer(path.build.images))
       .pipe(imagemin())
-      // .pipe(dest(path.build.images))
-      // .pipe(webp())
       .pipe(dest(path.build.images))
   );
 }
