@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/rmyha174/public_html
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R dist $DEPLOYPATH
+    - /bin/cp /home/rmyha174/public_html/dist/*.html $DEPLOYPATH
+    - /bin/cp -R /home/rmyha174/public_html/dist/assets $DEPLOYPATH
