@@ -1135,6 +1135,10 @@ body.is-using-mouse .fancybox__container :focus {
     background-color: black;
 }
 
+.header--dark .header__logo {
+    transform: scale(0.85);
+}
+
 .header__inner {
     height: 95px;
     padding: 1rem 0.7rem;
@@ -1159,6 +1163,7 @@ body.is-using-mouse .fancybox__container :focus {
     text-shadow: 0 7px 15px black;
     color: #ffffff;
     position: relative;
+    transition: transform 0.25s linear;
 }
 
 @media (max-width: 991px) {
@@ -1169,7 +1174,7 @@ body.is-using-mouse .fancybox__container :focus {
 
 @media (max-width: 767px) {
     .header__logo {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -1192,41 +1197,43 @@ body.is-using-mouse .fancybox__container :focus {
     }
 }
 
-.header__logo-text {
+.header__logo-text-first {
     position: absolute;
     top: 26%;
     left: 1%;
+    text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
-    .header__logo-text {
+    .header__logo-text-first {
         top: 29%;
         left: 6%;
     }
 }
 
 @media (max-width: 767px) {
-    .header__logo-text {
+    .header__logo-text-first {
         top: 33%;
         left: 15%;
     }
 }
 
-.header__logo-text-2 {
+.header__logo-text-second {
     position: absolute;
     top: 26%;
     left: 79%;
+    text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
-    .header__logo-text-2 {
+    .header__logo-text-second {
         top: 29%;
         left: 74%;
     }
 }
 
 @media (max-width: 767px) {
-    .header__logo-text-2 {
+    .header__logo-text-second {
         top: 33%;
         left: 70%;
     }

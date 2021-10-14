@@ -17,6 +17,10 @@
 
 .header--dark {
   background-color: rgba(0, 0, 0, 1);
+
+  .header__logo {
+    transform: scale(0.85);
+  }
 }
 
 .header__inner {
@@ -41,13 +45,14 @@
   @include text-shadow;
   color: #ffffff;
   position: relative;
+  transition: transform 0.25s linear;
 
   @include lg {
-     font-size: 1rem;
+    font-size: 1rem;
   }
 
-   @include md {
-     font-size: .8rem;
+  @include md {
+    font-size: 0.8rem;
   }
 }
 
@@ -57,48 +62,48 @@
   fill: white;
   cursor: pointer;
 
-   @include lg {
-   max-width: 73%;
+  @include lg {
+    max-width: 73%;
   }
 
   @include md {
-   max-width: 63%;
+    max-width: 63%;
   }
 }
 
-.header__logo-text {
+.header__logo-text-first {
   position: absolute;
   top: 26%;
   left: 1%;
+  text-transform: uppercase;
 
-   @include lg {
-     top: 29%;
-     left: 6%;
+  @include lg {
+    top: 29%;
+    left: 6%;
   }
 
-   @include md {
-     top: 33%;
-     left: 15%;
+  @include md {
+    top: 33%;
+    left: 15%;
   }
-
 }
 
-.header__logo-text-2 {
+.header__logo-text-second {
   position: absolute;
   top: 26%;
   left: 79%;
+  text-transform: uppercase;
 
-   @include lg {
-     top: 29%;
-     left: 74%;
+  @include lg {
+    top: 29%;
+    left: 74%;
   }
 
-   @include md {
-     top: 33%;
-     left: 70%;
+  @include md {
+    top: 33%;
+    left: 70%;
   }
 }
-
 
 .header__language a {
   font-family: "Roboto", serif;
