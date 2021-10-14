@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/rmyha174/public_html
+    - /bin/cp /home/rmyha174/repositories/cemetery/dist/*.html $DEPLOYPATH
+    - /bin/cp -R /home/rmyha174/repositories/cemetery/dist/assets $DEPLOYPATH
+    - /bin/cp /home/rmyha174/repositories/cemetery/robots.txt $DEPLOYPATH
+    - /bin/cp /home/rmyha174/repositories/cemetery/sitemap.xml $DEPLOYPATH
