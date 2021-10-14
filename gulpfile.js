@@ -16,6 +16,8 @@ const uglify = require("gulp-uglify");
 const panini = require("panini");
 const del = require("del");
 const newer = require("gulp-newer");
+const ttf2woff = require("gulp-ttf2woff");
+const ttf2woff2 = require("gulp-ttf2woff2");
 
 var path = {
   build: {
@@ -23,18 +25,21 @@ var path = {
     css: "dist/assets/css/",
     js: "dist/assets/js/",
     images: "dist/assets/img/",
+    fonts: "dist/assets/fonts/",
   },
   src: {
     html: "src/*.html",
     css: "src/assets/sass/style.scss",
     js: "src/assets/js/*.js",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp,json}",
+    fonts: "src/assets/fonts/*.ttf",
   },
   watch: {
     html: "src/**/*.html",
     css: "src/assets/sass/**/*.scss",
     js: "src/assets/js/**/*.js",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webp,json}",
+    fonts: "src/assets/fonts/*.ttf",
   },
   clean: "./dist",
 };
@@ -120,12 +125,19 @@ function js() {
 }
 
 function images() {
-  return (
-    src(path.src.images)
-      .pipe(newer(path.build.images))
-      .pipe(imagemin())
-      .pipe(dest(path.build.images))
-  );
+  return src(path.src.images)
+    .pipe(newer(path.build.images))
+    .pipe(imagemin())
+    .pipe(dest(path.build.images));
+}
+
+function fonts() {
+  src(path.src.fonts)
+    .pipe(ttf2woff())
+    .pipe(dest(path.build.fonts))
+  return src(path.src.fonts)
+    .pipe(ttf2woff2())
+    .pipe(dest(path.build.fonts))
 }
 
 function clean() {
@@ -137,15 +149,17 @@ function watchFiles() {
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.images], images);
+  gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(gulp.parallel(html, css, js, images));
+const build = gulp.series(gulp.parallel(html, css, fonts, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
+exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;

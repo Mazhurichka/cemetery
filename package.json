@@ -13,8 +13,7 @@
     "@fancyapps/ui": "^4.0.5",
     "gulp": "^4.0.2",
     "jquery": "^3.6.0",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+    "slick": "^1.12.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
@@ -29,6 +28,8 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^2.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.1"
   }

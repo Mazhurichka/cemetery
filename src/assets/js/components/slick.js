@@ -1,5 +1,3 @@
-//= ../../../../node_modules/slick-carousel/slick/slick.js
-
 //intro
 
 const introSlider = $(".intro__slider");
