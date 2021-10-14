@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;400&family=Rubik+Mono+One&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;400&family=Rubik+Mono+One&display=swap");
 
+@import "fonts.scss";
 @import "vars.scss";
 @import "mixins.scss";
 
@@ -61,6 +62,7 @@ body {
   background-color: rgba(13, 6, 6, 0.72);
   font-family: "Noto Serif", serif;
   font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
 
   &.no-scroll {
     overflow: hidden;

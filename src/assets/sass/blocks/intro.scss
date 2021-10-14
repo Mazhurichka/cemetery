@@ -26,10 +26,6 @@
   object-position: center top;
 }
 
-// .intro__inner {
-//   position: relative;
-// }
-
 .intro__inner-text {
   margin: 0 3rem;
   padding: 1.5rem;
@@ -55,9 +51,10 @@
   }
 
   @include md {
-    bottom: 30%;
+    bottom: 1%;
     right: 0;
     margin: 0 auto;
+    backdrop-filter: brightness(0.8);
   }
 }
 
@@ -92,10 +89,6 @@
 
   @include md {
     display: none;
-  }
-
-  @include sm {
-    font-size: 1rem;
   }
 }
 
@@ -132,8 +125,8 @@
   @include md {
     font-size: 1.1rem;
     left: 0;
-    bottom: 50%;
-    margin: 0 auto;
+    bottom: 65%;
+    margin-right: 0;
   }
 }
 
@@ -158,6 +151,10 @@
 
   &:hover {
     @include hover;
+  }
+
+  @include md {
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -220,5 +217,9 @@
 
   &:hover {
     @include hover;
+  }
+
+  @include md {
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
