@@ -18,6 +18,7 @@ const del = require("del");
 const newer = require("gulp-newer");
 const ttf2woff = require("gulp-ttf2woff");
 const ttf2woff2 = require("gulp-ttf2woff2");
+const webp = require('gulp-webp');
 
 var path = {
   build: {
@@ -128,6 +129,10 @@ function images() {
   return src(path.src.images)
     .pipe(newer(path.build.images))
     .pipe(imagemin())
+    .pipe(dest(path.build.images))
+    .pipe(webp({
+      quality: 70,
+    }))
     .pipe(dest(path.build.images));
 }
 
