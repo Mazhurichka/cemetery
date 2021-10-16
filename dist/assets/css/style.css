@@ -1742,7 +1742,7 @@ body.is-using-mouse .fancybox__container :focus {
 
 @media (max-width: 1350px) {
     .intro__inner-text {
-        width: 320px;
+        width: 300px;
         bottom: 9%;
     }
 }
