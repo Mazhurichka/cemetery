@@ -1,5 +1,5 @@
 //= ../../../node_modules/jquery/dist/jquery.min.js
-//= vendor/slick.min.js
+//= vendor/slick.js
 //= components/header.js
 //= components/burger.js
 //= vendor/fancyapp.js
