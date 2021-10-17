@@ -18,6 +18,7 @@ const del = require("del");
 const newer = require("gulp-newer");
 const ttf2woff = require("gulp-ttf2woff");
 const ttf2woff2 = require("gulp-ttf2woff2");
+const responsive = require('gulp-responsive');
 
 var path = {
   build: {
