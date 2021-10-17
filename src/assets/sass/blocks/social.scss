@@ -12,11 +12,11 @@
     font-style: italic;
     color: rgba(245, 245, 245, 1);
 
-      @include lg {
+    @include lg {
       font-size: 1.2rem;
     }
 
-     @include lg {
+    @include lg {
       font-size: 1rem;
     }
   }
@@ -24,6 +24,10 @@
   &__link {
     cursor: pointer;
     text-decoration: none;
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
 
     span {
       font-size: 0;
@@ -35,7 +39,7 @@
     height: 25px;
     fill: rgb(255, 255, 255);
 
-     @include md {
+    @include md {
       width: 25px;
       height: 20px;
     }

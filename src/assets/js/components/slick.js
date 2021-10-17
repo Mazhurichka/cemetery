@@ -5,7 +5,7 @@ const portfolioSlider = $(".portfolio__slider");
 
 introSlider.slick({
   autoplay: true,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 5000,
   infinite: true,
 });
 

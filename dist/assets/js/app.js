@@ -9089,7 +9089,7 @@ const portfolioSlider = $(".portfolio__slider");
 
 introSlider.slick({
   autoplay: true,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 5000,
   infinite: true,
 });
 
@@ -9146,6 +9146,5 @@ portfolioSlider.slick({
   ],
 });
 const getFullYear = new Date().getFullYear();
-
 
 document.querySelector(".copyright__date").insertAdjacentHTML("beforeBegin", getFullYear);

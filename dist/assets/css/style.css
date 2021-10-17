@@ -2739,6 +2739,10 @@ body.is-using-mouse .fancybox__container :focus {
 .social__link {
     cursor: pointer;
     text-decoration: none;
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .social__link span {
