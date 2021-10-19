@@ -19,6 +19,7 @@ const newer = require("gulp-newer");
 const ttf2woff = require("gulp-ttf2woff");
 const ttf2woff2 = require("gulp-ttf2woff2");
 const webp = require('gulp-webp');
+const group_media = require("gulp-group-css-media-queries");
 
 var path = {
   build: {
@@ -88,6 +89,7 @@ function css() {
     )
 
     .pipe(cssbeautify())
+    .pipe(group_media())
     .pipe(dest(path.build.css))
     .pipe(
       cssnano({
