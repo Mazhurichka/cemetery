@@ -111,6 +111,7 @@ function css() {
 
 function js() {
   return src(path.src.js, { base: "./src/assets/js/" })
+    .pipe(newer(path.build.js))
     .pipe(plumber())
     .pipe(rigger())
     .pipe(dest(path.build.js))
@@ -161,7 +162,7 @@ function watchFiles() {
   gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(gulp.parallel(html, css, fonts, js, images));
+const build = gulp.series(gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
