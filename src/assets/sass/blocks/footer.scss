@@ -2,7 +2,6 @@
   font-family: "Noto Serif", sans-serif;
   border-top: 2px solid rgba(255, 255, 255, 1);
   max-height: 300px;
-
   background-color: rgba(5, 2, 2, 0.8);
 
   &__wrapper {
@@ -23,14 +22,14 @@
   }
 
   &__copyright {
-    font-size: 0.8rem;
-    font-weight: 100;
+    padding: 1rem;
+    font-size: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 3rem;
+    height: auto;
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 0.8);
   }

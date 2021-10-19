@@ -40,14 +40,6 @@
   font-display: swap;
 }
 
-@font-face {
-    font-family: "Roboto";
-  src: local("☺"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
     font-size: 15px;
 }
@@ -2852,14 +2844,14 @@ body.is-using-mouse .fancybox__container :focus {
 }
 
 .footer__copyright {
-    font-size: 0.8rem;
-    font-weight: 100;
+    padding: 1rem;
+    font-size: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 3rem;
+    height: auto;
     background-color: black;
     color: rgba(255, 255, 255, 0.8);
 }

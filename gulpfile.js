@@ -114,7 +114,11 @@ function js() {
     .pipe(plumber())
     .pipe(rigger())
     .pipe(dest(path.build.js))
-    .pipe(uglify())
+    .pipe(
+      uglify({
+        compress: { unused: true, dead_code: true },
+      })
+    )
     .pipe(
       rename({
         suffix: ".min",
