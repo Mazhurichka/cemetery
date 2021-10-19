@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //= ../../../node_modules/jquery/dist/jquery.min.js
+  //= ../../../node_modules/jquery/dist/jquery.js
   //= vendor/slick.js
   //= components/slick.js
   //= components/header.js
