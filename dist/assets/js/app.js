@@ -3098,22 +3098,101 @@ $(function () {
     });
   }
 });
-$(function () {
-  let burger = $("#burger");
-  let nav = $("#nav");
-  let header = $("#header");
-
-  function showBurgerMenu() {
-    burger.toggleClass("active");
-    nav.toggleClass("nav--mobile");
-    // header.toggleClass("header--dark");
-    $("body").toggleClass("no-scroll");
-
-    $("body").toggleClass("show-nav");
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 767) {
+    addBurgerMenu();
   }
-
-  burger.on("click", showBurgerMenu);
 });
+
+if (window.innerWidth <= 767) {
+  addBurgerMenu();
+}
+
+function addBurgerMenu() {
+  $(function () {
+    let burger = $("#burger");
+    let nav = $("#nav");
+    let header = $("#header");
+  
+    function showBurgerMenu() {
+      burger.toggleClass("active");
+      nav.toggleClass("nav--mobile");
+      // header.toggleClass("header--dark");
+      $("body").toggleClass("no-scroll");
+  
+      $("body").toggleClass("show-nav");
+    }
+  
+    burger.on("click", showBurgerMenu);
+  });
+}
+
+//intro
+
+const introSlider = $(".intro__slider");
+const portfolioSlider = $(".portfolio__slider");
+
+introSlider.slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  infinite: true,
+});
+
+portfolioSlider.slick({
+  infinite: false,
+  speed: 1000,
+  rows: 2,
+  centerMode: false,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow:
+    "<svg class='gallary-arrow__prev slick-prev slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
+  nextArrow:
+    "<svg class='gallary-arrow__next slick-next slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
+  dots: true,
+
+  responsive: [
+    {
+      breakpoint: 1981,
+      settings: {
+        arrows: true,
+        rows: 2,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      },
+    },
+    {
+      breakpoint: 1300,
+      settings: {
+        arrows: false,
+        rows: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        rows: 2,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    { 
+      breakpoint: 576,
+      settings: {
+        arrows: true,
+        rows: 1,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+const getFullYear = new Date().getFullYear();
+
+document.querySelector(".copyright__date").insertAdjacentHTML("beforeBegin", getFullYear);
 // @fancyapps/ui/Fancybox v4.0.5
 !(function (t, e) {
   "object" == typeof exports && "undefined" != typeof module
@@ -9082,69 +9161,3 @@ $(function () {
   }
   (t.Carousel = D), (t.Fancybox = nt), (t.Panzoom = z);
 });
-//intro
-
-const introSlider = $(".intro__slider");
-const portfolioSlider = $(".portfolio__slider");
-
-introSlider.slick({
-  autoplay: true,
-  autoplaySpeed: 5000,
-  infinite: true,
-});
-
-portfolioSlider.slick({
-  infinite: false,
-  speed: 1000,
-  rows: 2,
-  centerMode: false,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  prevArrow:
-    "<svg class='gallary-arrow__prev slick-prev slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
-  nextArrow:
-    "<svg class='gallary-arrow__next slick-next slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
-  dots: true,
-
-  responsive: [
-    {
-      breakpoint: 1981,
-      settings: {
-        arrows: true,
-        rows: 2,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-      },
-    },
-    {
-      breakpoint: 1300,
-      settings: {
-        arrows: false,
-        rows: 2,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        rows: 2,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    { 
-      breakpoint: 576,
-      settings: {
-        arrows: true,
-        rows: 1,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
-const getFullYear = new Date().getFullYear();
-
-document.querySelector(".copyright__date").insertAdjacentHTML("beforeBegin", getFullYear);
