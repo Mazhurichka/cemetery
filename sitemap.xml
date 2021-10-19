@@ -1,46 +1,297 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>http://pamyatnik.vn.ua/</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://pamyatnik.vn.ua/</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/index.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#catalog</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/basement.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#about</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/single.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#services</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/double.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#engravis</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/memorials.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#portfolio</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
 <url>
-  <loc>http://pamyatnik.vn.ua/basement-monuments.html</loc>
-  <lastmod>2021-10-13T15:48:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://pamyatnik.vn.ua/index.html#footer</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
 </url>
-
-
+<url>
+  <loc>https://pamyatnik.vn.ua/tel:+380989726009</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/viber://chat?number=%2B+380989726009</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/basement.html</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/single.html</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/double.html</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/memorials.html</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/basement-monuments.html</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/viber://chat?number=%2B380989726009</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/maket_single.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-11.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-1.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-2.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-3.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-4.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-5.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-6.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-7.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-8.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-9.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-10.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-12.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-13.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-14.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-15.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-16.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/base/base-17.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-1.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-2.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-3.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-4.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-5.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-6.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-7.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-8.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-9.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-10.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-11.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-12.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-13.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-14.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
+<url>
+  <loc>https://pamyatnik.vn.ua/assets/img/samples/single/10-15.jpg</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-10-20</lastmod>
+</url>
 </urlset>
