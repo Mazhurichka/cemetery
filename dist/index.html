@@ -1041,7 +1041,7 @@
                     <div class="sample__item-title">Бетонное основание</div>
                     <div class="sample__item-subtitle">от 5000 грн</div>
                   </div>
-                  <span class="button button--dark">Смотреть</span>
+                  <span class="button button--dark" data-modal="#modal">Смотреть</span>
                 </div>
               </a>
         
@@ -1069,7 +1069,7 @@
                     <div class="sample__item-subtitle">от 5500 грн</div>
                   </div>
         
-                  <span class="button button--dark">Смотреть</span>
+                  <span class="button button--dark" data-modal="#modal">Смотреть</span>
                 </div>
               </a>
               <a href="double.html">
@@ -1095,7 +1095,7 @@
                     <div class="sample__item-title">Двойные памятники</div>
                     <div class="sample__item-subtitle">от 9000 грн</div>
                   </div>
-                  <span class="button button--dark">Смотреть</span>
+                  <span class="button button--dark" data-modal="#modal">Смотреть</span>
                 </div>
               </a>
               <a href="memorials.html">
@@ -1121,7 +1121,7 @@
                     <div class="sample__item-title">Мемориалы Эксклюзив</div>
                     <div class="sample__item-subtitle">договорная</div>
                   </div>
-                  <span class="button button--dark">Смотреть</span>
+                  <span class="button button--dark" data-modal="#modal">Смотреть</span>
                 </div>
               </a>
         
@@ -1148,7 +1148,7 @@
                     <div class="sample__item-title">Бетонные памятники</div>
                     <div class="sample__item-subtitle">от 1200 грн</div>
                   </div>
-                  <span class="button button--dark">Смотреть</span>
+                  <span class="button button--dark" data-modal="#modal">Смотреть</span>
                 </div>
               </a>
             </div>
@@ -1217,7 +1217,7 @@
                     Проектирование и изготовление памятников
                   </div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
               <div class="services__item">
                 <picture>
@@ -1239,7 +1239,7 @@
                     Оформление декоративными элементами
                   </div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
               <div class="services__item">
                 <picture>
@@ -1259,7 +1259,7 @@
                 <div class="services__item-text">
                   <div class="services__item-subtitle">Монтаж и демонтаж изделий</div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
         
               <div class="services__item">
@@ -1282,7 +1282,7 @@
                     Фундамент на могилу под памятник
                   </div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
               <div class="services__item">
                 <picture>
@@ -1304,7 +1304,7 @@
                     Установка лавочек и ограждений
                   </div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
               <div class="services__item">
                 <picture>
@@ -1326,7 +1326,7 @@
                     Облицовка плиткой и отмостка
                   </div>
                 </div>
-                <span class="button button--dark">Заказать</span>
+                <span class="button button--dark" data-modal="#modal">Заказать</span>
               </div>
             </div>
           </div>
@@ -2116,6 +2116,7 @@
       </div>
 
       <!--Footer-->
+
       <footer class="footer" id="footer" data-scrollspy="#footer">
         <div class="container">
           <div class="footer__wrapper">
@@ -2167,6 +2168,23 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <!--Modal-->
+    <div class="modal" id="modal">
+      <div class="modal__inner">
+        <h3>Мы на связи с 8:00-22:00</h3>
+        <a href="tel:+380989726009" class="modal__link">+380989726009</a>
+        <a href="viber://chat?number=%2B380989726009" class="modal__link">Viber</a>
+        <a href="https://wa.me/+380989726009" class="modal__link">Whatsapp</a>
+    
+        <button
+          class="modal__close"
+          id="modal-close"
+          type="button"
+          aria-label="button-close-modal"
+        ></button>
+      </div>
     </div>
 
     <script src="./assets/js/app.min.js"></script>
