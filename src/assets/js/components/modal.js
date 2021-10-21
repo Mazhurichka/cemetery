@@ -13,7 +13,7 @@ $(function () {
     modal.removeClass("modal-show");
   });
 
-  $(window).click(function (e) {
+  $(window).on("click", function (e) {
     if ($(e.target).is(".modal")) {
       modal.removeClass("modal-show");
     }

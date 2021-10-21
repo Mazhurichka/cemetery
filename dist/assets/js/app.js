@@ -5431,7 +5431,7 @@
             special.setup.call(elem, data, namespaces, eventHandle) === false
           ) {
             if (elem.addEventListener) {
-              elem.addEventListener(type, eventHandle, {passive: true});
+              elem.addEventListener(type, eventHandle);
             }
           }
         }
@@ -20328,7 +20328,6 @@ $(function () {
   function showBurgerMenu() {
     burger.toggleClass("active");
     nav.toggleClass("nav--mobile");
-    // header.toggleClass("header--dark");
     $("body").toggleClass("no-scroll");
 
     $("body").toggleClass("show-nav");
@@ -20351,7 +20350,7 @@ $(function () {
     modal.removeClass("modal-show");
   });
 
-  $(window).click(function (e) {
+  $(window).on("click", function (e) {
     if ($(e.target).is(".modal")) {
       modal.removeClass("modal-show");
     }
