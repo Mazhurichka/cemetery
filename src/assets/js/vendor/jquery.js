@@ -5431,7 +5431,7 @@
             special.setup.call(elem, data, namespaces, eventHandle) === false
           ) {
             if (elem.addEventListener) {
-              elem.addEventListener(type, eventHandle, {passive: true});
+              elem.addEventListener(type, eventHandle);
             }
           }
         }
