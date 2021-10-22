@@ -14279,7 +14279,7 @@ $(function () {
   $(window).on("resize", function () {
     burger.removeClass("active");
     nav.removeClass("nav--mobile");
-     $("body").removeClass("show-nav");
+    $("body").removeClass("show-nav");
   });
 
   changeHeaderColor();
@@ -14301,17 +14301,17 @@ $(function () {
 
   let links = $("[data-scroll]");
 
-  if (!location.pathname.includes("/index.html")) {
-  } else {
+  if (location.pathname.includes("/index.html") || location.pathname === "/") {
     links.on("click", function (event) {
-      event.preventDefault();
+      if ($(event.target.className === "nav__list-link")) {
+        event.preventDefault();
+      }
 
       let scrollElement = $(this).data("scroll");
       let scrollElementPosition = $(scrollElement).offset().top;
       burger.removeClass("active");
       nav.removeClass("nav--mobile");
       $("body").removeClass("show-nav");
-
 
       $("body").removeClass("no-scroll");
 
@@ -14322,6 +14322,7 @@ $(function () {
         1000
       );
     });
+  } else {
   }
 
   // =====================scroll spy===========================
