@@ -22,8 +22,10 @@
       {{>footer}}
     </div>
 
-    <!--Modal-->
-    {{>modal}}
+    {{#ifpage 'index'}}
+      <!--Modal-->
+      {{>modal}} 
+    {{/ifpage}}
 
     <script src="./assets/js/app.min.js"></script>
   </body>
