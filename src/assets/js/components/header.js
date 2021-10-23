@@ -1,8 +1,6 @@
 $(function () {
   let header = $("#header");
   let headerHeight = header.innerHeight();
-  let intro = $("#intro");
-  let introHeight = intro.innerHeight();
   let scrollTop = $(window).scrollTop();
   let burger = $("#burger");
   let nav = $("#nav");
@@ -82,6 +80,16 @@ $(function () {
         $(`#nav [data-scroll="${sectionID}"]`).addClass("active");
       } else {
         $(`#nav [data-scroll="${sectionID}"]`).removeClass("active");
+      }
+
+      // add class when we are in page catalog
+      if (
+        location.pathname.includes("/index.html") ||
+        location.pathname === "/"
+      ) {
+      } else {
+        $(`#nav [data-scroll]`).removeClass("active");
+        $(`#nav [data-scroll="#catalog"]`).addClass("active");
       }
     });
   }
