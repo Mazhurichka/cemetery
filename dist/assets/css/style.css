@@ -404,7 +404,8 @@ body.show-nav .header {
   cursor: pointer;
 }
 
-.nav__list-item.active {
+.nav__list-item.active,
+.active-catalog {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid white;
@@ -412,7 +413,8 @@ body.show-nav .header {
   transition: background-color 0.2s linear, border 0.2s linear;
 }
 
-.nav__list-item.active:hover .nav__list-link:after {
+.nav__list-item.active:hover .nav__list-link:after,
+.active-catalog:hover .nav__list-link:after {
   width: 0;
 }
 
