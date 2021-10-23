@@ -86,6 +86,10 @@
     top: 33%;
     left: 15%;
   }
+
+  & > span {
+    font-size: 0;
+  }
 }
 
 .header__logo-text-second {

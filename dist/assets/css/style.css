@@ -373,6 +373,10 @@ body.show-nav .header {
   text-transform: uppercase;
 }
 
+.header__logo-text-first > span {
+  font-size: 0;
+}
+
 .header__logo-text-second {
   position: absolute;
   top: 26%;

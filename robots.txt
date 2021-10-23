@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Host: www.pamyatnik.vn.ua
-Sitemap: http://pamyatnik.vn.ua/sitemap.xml
+Sitemap: https://pamyatnik.vn.ua/sitemap.xml
