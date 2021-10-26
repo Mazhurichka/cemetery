@@ -1153,6 +1153,11 @@ body.show-nav .header {
   justify-content: center;
 }
 
+.error__content {
+  background-color: black;
+  color: white;
+}
+
 /* Slider */
 
 .slick-loading .slick-list {

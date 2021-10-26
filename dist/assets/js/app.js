@@ -14221,9 +14221,9 @@ portfolioSlider.slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   prevArrow:
-    "<svg class='gallary-arrow__prev slick-prev slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
+    "<svg class='gallary-arrow__prev slick-prev slick-arrow'><use xlink:href='../../assets/img/sprite.svg#slider-arrow'></use></svg>",
   nextArrow:
-    "<svg class='gallary-arrow__next slick-next slick-arrow'><use xlink:href='#slider-arrow'></use></svg>",
+    "<svg class='gallary-arrow__next slick-next slick-arrow'><use xlink:href='../../assets/img/sprite.svg#slider-arrow'></use></svg>",
   dots: true,
 
   responsive: [
@@ -14254,7 +14254,7 @@ portfolioSlider.slick({
         slidesToScroll: 2,
       },
     },
-    { 
+    {
       breakpoint: 576,
       settings: {
         arrows: true,
