@@ -151,6 +151,7 @@ body {
 
 
 // blocks
+@import "vendor/slick.scss";
 
 @import "blocks/intro.scss";
 @import "blocks/header.scss";
@@ -171,6 +172,4 @@ body {
 @import "blocks/404.scss";
 
 // vendor
-
-@import "vendor/slick.scss";
 @import "vendor/fancyapp.scss";
