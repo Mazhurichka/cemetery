@@ -57,7 +57,7 @@ body {
 body {
   margin: 0;
   background-image: url(../img/bakground.webp);
-  background-color: rgba(13, 6, 6, 0.72);
+  background-color: rgba(0, 0, 0, 1);
   font-family: "Noto Serif", serif;
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
@@ -169,7 +169,7 @@ body {
 @import "blocks/catalog.scss";
 @import "blocks/footer.scss";
 @import "blocks/modal.scss";
-@import "blocks/404.scss";
+@import "blocks/error-page.scss";
 
 // vendor
 @import "vendor/fancyapp.scss";
