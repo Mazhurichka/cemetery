@@ -2,6 +2,17 @@
   .content {
     margin-top: 0;
   }
+
+  .header__logo-icon {
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+
+    @include lg {
+      top: 90px;
+    }
+
+  }
 }
 
 .error {
@@ -67,6 +78,7 @@
   }
 
   & .error__link {
+    margin: 1.5rem 0;
     padding: 0.6rem;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.8);

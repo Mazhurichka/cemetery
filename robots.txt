@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /error-page.shtml
 Host: www.pamyatnik.vn.ua
 Sitemap: https://pamyatnik.vn.ua/sitemap.xml

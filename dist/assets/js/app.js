@@ -14283,8 +14283,10 @@ $(function () {
   changeHeaderColor();
 
   $(window).on("scroll", function () {
-    scrollTop = $(header).offset().top;
-    changeHeaderColor();
+    if ($(header).length) {
+      scrollTop = $(header).offset().top;
+      changeHeaderColor();
+    }
   });
 
   function changeHeaderColor() {

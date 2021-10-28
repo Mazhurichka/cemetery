@@ -67,7 +67,12 @@ p {
 
 ul {
   list-style: none;
+  margin: 0;
   padding: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 img {
@@ -1182,41 +1187,6 @@ body.show-nav .header {
   border: 4px solid white;
 }
 
-.social {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.social__title {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: italic;
-  color: whitesmoke;
-}
-
-.social__link {
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  padding: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.social__link span {
-  font-size: 0;
-}
-
-.social__icon {
-  width: 30px;
-  height: 25px;
-  fill: white;
-}
-
 .catalog {
   margin: 3rem auto;
 }
@@ -1268,16 +1238,16 @@ body.show-nav .header {
 
 .footer {
   font-family: "Noto Serif", sans-serif;
-  border-top: 2px solid white;
-  max-height: 300px;
-  background-color: rgba(5, 2, 2, 0.8);
+  border-top: 1px solid white;
+  max-height: 600px;
+  background-color: black;
 }
 
 .footer__wrapper {
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer__copyright {
@@ -1293,41 +1263,26 @@ body.show-nav .header {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.address {
+.address,
+.shedule,
+.contacts,
+.social {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
-.address__title {
+.address__title,
+.shedule__title,
+.contacts__title,
+.social__title {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  color: white;
-}
-
-.address__text {
-  font-size: 1.2rem;
-  font-style: normal;
-  color: white;
-}
-
-.contacts {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contacts__title {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: italic;
-  color: white;
 }
 
 .contacts__phone {
@@ -1345,6 +1300,25 @@ body.show-nav .header {
 
 .contacts__phone-link:hover {
   text-decoration: underline;
+}
+
+.social__link {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link span {
+  font-size: 0;
+}
+
+.social__icon {
+  width: 30px;
+  height: 25px;
+  fill: white;
 }
 
 .modal {
@@ -1432,6 +1406,12 @@ body.show-nav .header {
   margin-top: 0;
 }
 
+.error-page .header__logo-icon {
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+
 .error {
   width: 100%;
   height: 800px;
@@ -1498,6 +1478,7 @@ body.show-nav .header {
 }
 
 .error__content .error__link {
+  margin: 1.5rem 0;
   padding: 0.6rem;
   font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -2712,36 +2693,15 @@ body.is-using-mouse .fancybox__container :focus {
     width: 75%;
   }
 
+  .address__title,
+  .shedule__title,
+  .contacts__title,
   .social__title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
-  .social__title {
-    font-size: 1rem;
-  }
-
-  .address__title {
-    font-size: 1.2rem;
-  }
-
-  .address__title {
-    font-size: 1rem;
-  }
-
-  .address__text {
-    font-size: 1rem;
-  }
-
-  .contacts__title {
-    font-size: 1.2rem;
-  }
-
-  .contacts__title {
-    font-size: 1rem;
-  }
-
-  .contacts__phone-link {
-    font-size: 1rem;
+  .error-page .header__logo-icon {
+    top: 90px;
   }
 
   .error {
@@ -2890,22 +2850,21 @@ body.is-using-mouse .fancybox__container :focus {
     width: 100%;
   }
 
-  .social__icon {
-    width: 25px;
-    height: 20px;
-  }
-
   .catalog__gallery {
     justify-content: space-evenly;
   }
 
   .footer__wrapper {
     padding-top: 1.2rem;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .address {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  .address__title,
+  .shedule__title,
+  .contacts__title,
+  .social__title {
+    font-size: 1.2rem;
   }
 
   .contacts {
@@ -3008,8 +2967,6 @@ body.is-using-mouse .fancybox__container :focus {
 
   .footer__wrapper {
     padding-top: 0.8rem;
-    flex-direction: column;
-    align-items: center;
   }
 
   .error__text {
