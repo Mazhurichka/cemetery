@@ -16,6 +16,7 @@ portfolioSlider.slick({
   centerMode: false,
   slidesToShow: 4,
   slidesToScroll: 4,
+  lazyLoad: "ondemand",
   prevArrow:
     "<svg class='gallary-arrow__prev slick-prev slick-arrow'><use xlink:href='../../assets/img/sprite.svg#slider-arrow'></use></svg>",
   nextArrow:
