@@ -31,6 +31,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 2rem;
 }
 
 address {
@@ -153,6 +154,14 @@ body {
   transition: opacity 0.4s linear;
 }
 
+.text__link {
+  color: rgb(0, 0, 0);
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 // blocks
 @import "vendor/slick.scss";

@@ -141,7 +141,7 @@ function images() {
     .pipe(dest(path.build.images))
     .pipe(
       webp({
-        quality: 70,
+        quality: 85,
       })
     )
     .pipe(dest(path.build.images));

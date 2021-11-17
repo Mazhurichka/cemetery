@@ -69,6 +69,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 2rem;
 }
 
 address {
@@ -158,6 +159,15 @@ body.show-nav .header {
   text-align: center;
   opacity: 1;
   transition: opacity 0.4s linear;
+}
+
+.text__link {
+  color: black;
+  padding: 0;
+}
+
+.text__link:hover {
+  text-decoration: underline;
 }
 
 /* Slider */
