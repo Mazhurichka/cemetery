@@ -120,6 +120,7 @@ body.show-nav .header {
 .content {
   margin-top: 95px;
   flex-grow: 1;
+  position: relative;
 }
 
 .container {
@@ -695,6 +696,8 @@ body.show-nav .header {
 
 .nav__list-item {
   padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
   cursor: pointer;
 }
 
@@ -702,7 +705,6 @@ body.show-nav .header {
   display: flex;
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid white;
-  border-radius: 2.5rem;
   transition: background-color 0.2s linear, border 0.2s linear;
 }
 
@@ -964,7 +966,7 @@ body.show-nav .header {
 }
 
 .button--dark {
-  font-family: "Roboto",serif;
+  font-family: "Roboto", serif;
   font-size: 1.1rem;
   font-weight: 400;
   padding: 1rem 1.8rem;
@@ -977,8 +979,44 @@ body.show-nav .header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity .4s linear;
+  transition: opacity 0.4s linear;
   cursor: pointer;
+}
+
+.button-up {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 270px;
+  right: 50px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.button-up.visible {
+  display: block;
+}
+
+.button-up .button-up__item {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.button-up .button-up__item:hover {
+  background-color: white;
+}
+
+.button-up .button-up__item .button-up__svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+.button-up .button-up__item .button-up__svg:hover {
+  fill: black;
 }
 
 .type__wrapper {
@@ -2580,7 +2618,7 @@ body.is-using-mouse .fancybox__container :focus {
   }
 
   .button--dark {
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
   }
 
   .type__item .type__description {
@@ -2932,8 +2970,15 @@ body.is-using-mouse .fancybox__container :focus {
   }
 
   .button--dark {
-    padding: .5rem 1rem;
-    font-size: .8rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .button-up {
+    width: 3rem;
+    height: 3rem;
+    right: 10px;
+    bottom: 50px;
   }
 
   .type__item {

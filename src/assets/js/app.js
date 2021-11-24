@@ -6,3 +6,4 @@
 //= components/burger.js
 //= components/modal.js
 //= components/date.js
+//= components/button-up.js

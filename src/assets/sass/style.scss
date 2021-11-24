@@ -86,6 +86,7 @@ body {
 .content {
   margin-top: 95px;
   flex-grow: 1;
+  position: relative;
 
   @include xl {
     margin-top: 80px;
