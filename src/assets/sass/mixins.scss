@@ -9,34 +9,40 @@
 // Small devices
 @mixin sm {
   @media (max-width: #{$screen-sm - 1px}) {
-      @content;
+    @content;
+  }
+}
+
+@mixin sm-landscape {
+  @media (max-width: 767px) and (orientation: landscape) {
+    @content;
   }
 }
 
 // Medium devices
 @mixin md {
   @media (max-width: #{$screen-md - 1px}) {
-      @content;
+    @content;
   }
 }
 
 // Large devices
 @mixin lg {
   @media (max-width: #{$screen-lg - 1px}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
   @media (max-width: #{$screen-xl - 1px}) {
-      @content;
+    @content;
   }
 }
 
 // Custom devices
 @mixin rwd($screen) {
-  @media (max-width: $screen+'px') {
-      @content;
+  @media (max-width: $screen+"px") {
+    @content;
   }
 }
