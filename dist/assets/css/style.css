@@ -40,6 +40,17 @@
   font-display: swap;
 }
 
+.live-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 0;
+  height: 3px;
+  background-color: blanchedalmond;
+  transition: width .3s linear;
+}
+
 html {
   font-size: 15px;
 }
@@ -617,7 +628,7 @@ body.show-nav .header {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 999;
   transition: background-color 0.3s linear;
 }
 

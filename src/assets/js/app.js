@@ -7,3 +7,4 @@
 //= components/modal.js
 //= components/date.js
 //= components/button-up.js
+//= components/progress-bar.js

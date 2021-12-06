@@ -7,7 +7,7 @@ $(function () {
   });
 
   function chekScrollPosition() {
-      console.log($(this).scrollTop());
+     
     if ($(this).scrollTop() > 1000) {
       buttonUp.addClass("visible");
     } else {

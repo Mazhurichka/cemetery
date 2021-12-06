@@ -20380,7 +20380,7 @@ $(function () {
   });
 
   function chekScrollPosition() {
-      console.log($(this).scrollTop());
+     
     if ($(this).scrollTop() > 1000) {
       buttonUp.addClass("visible");
     } else {
@@ -20392,5 +20392,21 @@ $(function () {
     buttonUp.on("click", function () {
       $("html, body").animate({ scrollTop: 0 }, 500);
     });
+  }
+});
+$(function () {
+  let progressBar = $(".live-line");
+
+  $(window).on("scroll", scrollHandler);
+
+  function scrollHandler() {
+    let scrollPosition =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    let windowHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrollOnPercent = (scrollPosition / windowHeight) * 100;
+
+    progressBar.css({ width: scrollOnPercent + "%" });
   }
 });
