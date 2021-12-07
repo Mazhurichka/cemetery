@@ -2,7 +2,6 @@
 @import "vars.scss";
 @import "mixins.scss";
 
-
 .live-line {
   position: fixed;
   top: 0;
@@ -11,7 +10,6 @@
   width: 0;
   height: 3px;
   background-color: blanchedalmond;
-  transition: width .3s linear;
 }
 
 html {
