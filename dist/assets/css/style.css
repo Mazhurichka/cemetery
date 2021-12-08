@@ -46,7 +46,7 @@
   left: 0;
   z-index: 1000;
   width: 0;
-  height: 5px;
+  height: 7px;
   background-color: blanchedalmond;
 }
 
@@ -2663,6 +2663,15 @@ body.is-using-mouse .fancybox__container :focus {
   }
 }
 
+@media (max-width: 1169px) and (orientation: landscape) {
+  .button-up {
+    width: 3rem;
+    height: 3rem;
+    bottom: 50px;
+    right: 15px;
+  }
+}
+
 @media (max-width: 991px) {
   html,
   body {
@@ -2940,15 +2949,6 @@ body.is-using-mouse .fancybox__container :focus {
 
   .error__content .error__link {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-  .button-up {
-    width: 3rem;
-    height: 3rem;
-    bottom: 50px;
-    right: 15px;
   }
 }
 

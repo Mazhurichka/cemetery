@@ -19,6 +19,12 @@
   }
 }
 
+@mixin md-landscape {
+  @media (max-width: 1169px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 // Medium devices
 @mixin md {
   @media (max-width: #{$screen-md - 1px}) {
