@@ -40,16 +40,6 @@
   font-display: swap;
 }
 
-.live-line {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 0;
-  height: 7px;
-  background-color: blanchedalmond;
-}
-
 html {
   font-size: 15px;
 }
@@ -118,6 +108,16 @@ body.no-scroll {
 
 body.show-nav .header {
   background-color: black;
+}
+
+.live-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 0;
+  height: 7px;
+  background-color: white;
 }
 
 .page {
@@ -2790,11 +2790,11 @@ body.is-using-mouse .fancybox__container :focus {
   }
 
   .intro__inner-text {
-    bottom: 1%;
+    bottom: 3%;
     right: 0;
     margin: 0 auto;
-    -webkit-backdrop-filter: brightness(0.8);
-    backdrop-filter: brightness(0.8);
+    -webkit-backdrop-filter: brightness(0.7);
+    backdrop-filter: brightness(0.7);
   }
 
   .intro__inner-title {
@@ -2961,6 +2961,10 @@ body.is-using-mouse .fancybox__container :focus {
 @media (max-width: 575px) {
   .section__title {
     font-size: 1.3rem;
+  }
+
+  .intro__inner-text {
+    width: 270px;
   }
 
   .intro__inner-title {

@@ -2,16 +2,6 @@
 @import "vars.scss";
 @import "mixins.scss";
 
-.live-line {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 0;
-  height: 7px;
-  background-color: blanchedalmond;
-}
-
 html {
   font-size: 15px;
 }
@@ -84,6 +74,16 @@ body {
   &.show-nav .header {
     background-color: rgba(0, 0, 0, 1);
   }
+}
+
+.live-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 0;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .page {

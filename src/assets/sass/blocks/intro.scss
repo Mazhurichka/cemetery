@@ -51,10 +51,14 @@
   }
 
   @include md {
-    bottom: 1%;
+    bottom: 3%;
     right: 0;
     margin: 0 auto;
-    backdrop-filter: brightness(0.8);
+    backdrop-filter: brightness(0.7);
+  }
+
+  @include sm {
+    width: 270px;
   }
 }
 
