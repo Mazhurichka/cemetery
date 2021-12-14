@@ -496,8 +496,6 @@ body.show-nav .header {
   position: absolute;
   left: 0;
   bottom: 5%;
-  -webkit-animation: text-pulse 1.5s ease-in-out infinite alternate;
-  animation: text-pulse 1.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes text-pulse {
