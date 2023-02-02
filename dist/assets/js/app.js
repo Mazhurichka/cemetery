@@ -14209,13 +14209,13 @@ const portfolioSlider = $(".portfolio__slider");
 
 introSlider.slick({
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 7000,
   infinite: true,
 });
 
 portfolioSlider.slick({
   infinite: false,
-  speed: 1000,
+  speed: 1500,
   rows: 2,
   centerMode: false,
   slidesToShow: 4,
